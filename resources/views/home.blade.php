@@ -23,9 +23,9 @@
                             <div class="top-address text-left">
                                 <p>
 		<span>
-	<i class="icofont-home"></i>SE1 7PB London, United Kingdom</span>
-                                    <a href="tel:(099) 2569 2453 1215">
-                                        <i class="icofont-ui-call"></i>(099) 2569 2453 1215 </a>
+	<i class="icofont-home"></i>РФ, КЧР, с. Учкекен, ул .Подгорная, 1</span>
+                                    <a href="tel:8 (87877) 2-37-81">
+                                        <i class="icofont-ui-call"></i>8 (87877) 2-37-81</a>
 
                                 </p>
                             </div>
