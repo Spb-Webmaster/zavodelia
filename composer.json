@@ -14,7 +14,9 @@
         "maatwebsite/excel": "^3.1",
         "moonshine/moonshine": "^3.8",
         "moonshine/ru": "^1.0",
-        "spatie/laravel-honeypot": "^4.5"
+        "moonshine/tinymce": "^1.0",
+        "spatie/laravel-honeypot": "^4.5",
+        "yurizoom/moonshine-media-manager": "^2.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.15",

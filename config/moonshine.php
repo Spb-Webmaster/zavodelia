@@ -20,6 +20,14 @@ use MoonShine\Laravel\Pages\LoginPage;
 use MoonShine\Laravel\Pages\ProfilePage;
 
 return [
+    'media-manager' => [
+        'auto_menu' => false,
+        'disk' => config('filesystem.default', 'public'),
+        'allowed_ext' => 'jpg,jpeg,png,pdf,doc,docx,zip',
+        'default_view' => 'table',
+    ],
+
+
     'title' => env('MOONSHINE_TITLE', 'MoonShine'),
     'logo' => 'vendor/moonshine/logo.svg',
     'logo_small' => 'vendor/moonshine/logo-small.svg',
@@ -76,7 +84,7 @@ return [
     ],
 
     // Layout, pages, forms
-    'layout' => App\MoonShine\Layouts\MoonShineLayout::class,
+    'layout' => App\MoonShine\Layouts\AxeldLayout::class,
 
     'forms' => [
         'login' => LoginForm::class,
@@ -94,4 +102,6 @@ return [
     'locale' => 'ru',
     'locale_key' => ChangeLocale::KEY,
     'locales' => ['ru'],
+
+
 ];
