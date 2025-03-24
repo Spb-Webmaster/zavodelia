@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="csrf-token" content="{{{ csrf_token() }}}">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   {{-- @livewireStyles--}}
+    {{-- @livewireStyles--}}
     @vite([
     'resources/css/app.css',
     'resources/js/app.js',
@@ -69,8 +69,496 @@
 <div id="content" class="content_ {{ route_name() }} ">
     <x-message.message/>
     <x-message.message_error/>
+    <!-- MAIN WRAPPER START -->
+    <div class="wrapper">
+        <div class="em40_header_area_main">
 
-    @yield('content')
+            <div class="techite-header-top">
+                <div class="container">
+
+                    <!-- STYLE 1 Right Side Icon = h_top_l1  -->
+
+                    <div class="row">
+                        <!-- TOP LEFT -->
+                        <div class="col-xs-12 col-lg-8 col-xl-8 col-md-12 col-sm-12">
+                            <div class="top-address text-left">
+                                <p>
+		                           <span><i class="icofont-home"></i>{{(config2('moonshine.setting.contact_address'))?:''}}</span>
+                                    <a href="tel:{{(config2('moonshine.setting.phone1'))?:''}}">
+                                        <i class="icofont-ui-call"></i>{{(config2('moonshine.setting.phone1'))?:''}}</a>
+
+                                </p>
+                            </div>
+                        </div>
+                        <!-- TOP RIGHT -->
+                        <div class="col-xs-12 col-lg-4 col-xl-4 col-md-12 col-sm-12 ">
+                            <div class="top-right-menu">
+                                <ul class="social-icons text-right text_m_center">
+                                    <div class="top-address">
+                                        <p>
+
+
+                                        </p>
+                                    </div>
+                                    <li><a class="facebook social-icon" href="#" title="Facebook"><i
+                                                class="icofont-facebook"></i></a></li>
+                                    <li><a class="x twitter social-icon" href="#" title="X Twitter"><i
+                                                class="icofont-x twitter"></i></a></li>
+                                    <li><a class="tiktok social-icon" href="#" title="Tiktok"><i
+                                                class="icofont-tiktok"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- STYLE 2 Welcome Style 1 = h_top_l2  -->
+
+
+                </div>
+            </div>
+            <!-- END HEADER TOP AREA -->
+
+
+            <!-- HEADER TOP 2 creative AREA -->
+
+            <div class="tx_top2_relative">
+                <div class="">
+
+                    <div class="mobile_logo_area hidden-md hidden-lg">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+
+                                    <div class="mobile_menu_logo text-center">
+                                        <a href="#" title="{{(config2('moonshine.setting.slogan2'))?:''}}">
+                                            <img src="/images/logo01.png" alt="Techite">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- HEADER MAIN MENU AREA -->
+
+
+                    <div class="tx_relative_m">
+                        <div class="">
+                            <div class="mainmenu_width_tx  ">
+                                <!-- Header Default Menu = 1 redux  -->
+
+
+                                <!-- Header Default Menu = 1 metabox -->
+                                <div class="techite-main-menu one_page hidden-xs hidden-sm witr_search_wh  witr_h_h20"
+                                     style="z-index: 1000;">
+                                    <div class="techite_nav_area scroll_fixed">
+                                        <div class="container">
+
+                                            <div class="row logo-left">
+                                                <!-- LOGO -->
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+
+
+                                                    <div class="logo">
+                                                        <a class="main_sticky_main_l" href="#" title="Techite">
+                                                            <img src="images/logo01.png" alt="Techite">
+                                                        </a>
+                                                        <a class="main_sticky_l" href="#" title="Techite">
+                                                            <img src="images/logo02.png" alt="Techite">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- END LOGO -->
+
+                                                <!-- MAIN MENU -->
+                                                @include('include.templates.menu.main_menu')
+                                                <!-- END MAIN MENU -->
+                                            </div> <!-- END ROW -->
+
+                                        </div> <!-- END CONTAINER -->
+                                    </div>  <!-- END AREA -->
+                                </div>
+                                <div></div>
+
+                                <!-- 21 No Logo,Right Search,Popup Menu,Button  = 21 metabox -->
+
+
+                            </div> <!-- absulate div -->
+                        </div> <!-- relative div -->
+
+
+                    </div> <!-- top 2 absulate div -->
+                </div> <!--  top 2 relative div  extra -->
+
+
+            </div> <!--  div extra -->
+
+            <!-- MOBILE MENU AREA 222222222-->
+            <div class="home-2 mbm hidden-md hidden-lg  header_area main-menu-area">
+                <div class="menu_area mobile-menu">
+                    <nav style="display: block;">
+                        <ul id="menu-main-menu-1" class="main-menu clearfix">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-7391">
+                                <a href="#">Home</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-19">
+                                        <a href="https://demo.themexbd.com/wpi/techite/" aria-current="page">Home
+                                            Main</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7415">
+                                        <a
+                                            href="https://demo.themexbd.com/wpi/techite/landing-page/">Landing Page</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7416">
+                                        <a
+                                            href="https://demo.themexbd.com/wpi/techite/video-page/">Video Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6337"><a
+                                    href="https://demo.themexbd.com/wpi/techite/about/">About</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6350">
+                                <a href="#">Page</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7390">
+                                        <a href="#">Portfolio</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6354">
+                                                <a href="https://demo.themexbd.com/wpi/techite/portfolio-grid/">Portfolio
+                                                    Grid</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6355">
+                                                <a href="https://demo.themexbd.com/wpi/techite/portfolio-modern/">Portfolio
+                                                    Modern</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6358">
+                                        <a href="https://demo.themexbd.com/wpi/techite/service/">Service</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6359">
+                                                <a href="https://demo.themexbd.com/wpi/techite/single-service/">Single
+                                                    Service</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6360">
+                                        <a
+                                            href="https://demo.themexbd.com/wpi/techite/team/">Team</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6351">
+                                        <a
+                                            href="https://demo.themexbd.com/wpi/techite/faq/">Faq</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6356">
+                                        <a
+                                            href="https://demo.themexbd.com/wpi/techite/pricing-plan/">Pricing Plan</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6444">
+                                        <a
+                                            href="https://demo.themexbd.com/wpi/techite/countdown/">Countdown</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6352">
+                                        <a
+                                            href="https://demo.themexbd.com/wpi/techite/history/">History</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6357">
+                                        <a
+                                            href="https://demo.themexbd.com/wpi/techite/privacy-policy-2/">Privacy
+                                            Policy</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7388">
+                                <a href="#">Event</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6348">
+                                        <a
+                                            href="https://demo.themexbd.com/wpi/techite/event-grid/">Event Grid</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6349">
+                                        <a
+                                            href="https://demo.themexbd.com/wpi/techite/event-page/">Event Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7389">
+                                <a href="#">Blog</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6338">
+                                        <a
+                                            href="https://demo.themexbd.com/wpi/techite/blog/">Blog</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6340">
+                                        <a
+                                            href="https://demo.themexbd.com/wpi/techite/blog-left-sidebar/">Blog Left
+                                            Sidebar</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6339">
+                                        <a
+                                            href="https://demo.themexbd.com/wpi/techite/blog-left-2column/">Blog Left
+                                            2Column</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6342">
+                                        <a
+                                            href="https://demo.themexbd.com/wpi/techite/blog-right-sidebar/">Blog Right
+                                            Sidebar</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6341">
+                                        <a
+                                            href="https://demo.themexbd.com/wpi/techite/blog-right-2column/">Blog Right
+                                            2Column</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6346"><a
+                                    href="https://demo.themexbd.com/wpi/techite/contact/">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- END MOBILE MENU AREA 22222222222 -->
+
+        </div>
+
+        @yield('content')
+
+
+        <!-- middle and bottom AREA -->
+        <div class="witrfm_area">
+
+
+            <!-- FOOTER MIDDLE AREA -->
+            <div class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6  col-lg-4">
+                            <div id="about_us-widget-2" class="widget about_us"><h2 class="widget-title">Контакты</h2>
+                                <!-- About Widget -->
+                                <div class="about-footer">
+                                    <div class="footer-widget address">
+                                        <div class="footer-logo">
+
+                                            <p>{{(config2('moonshine.setting.slogan2'))?:''}} - многоотраслевое, динамически развивающееся предприятие, имеющее партнерские отношения с многими крупными компаниями России и СНГ.</p>
+                                        </div>
+                                        <div class="footer-address">
+                                            <div class="footer_s_inner">
+                                                <div class="footer-sociala-icon">
+                                                    <i class="icofont-google-map"></i>
+                                                </div>
+                                                <div class="footer-sociala-info">
+                                                    <p>{{(config2('moonshine.setting.contact_miniaddress'))?:''}}</p>
+                                                </div>
+                                            </div>
+                                            <div class="footer_s_inner">
+                                                <div class="footer-sociala-icon">
+                                                    <i class="icofont-phone"></i>
+                                                </div>
+                                                <div class="footer-sociala-info">
+                                                    <p>Телефон: {{(config2('moonshine.setting.phone1'))?:''}}</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="footer_s_inner">
+                                                <div class="footer-sociala-icon">
+                                                    <i class="icofont-envelope-open"></i>
+                                                </div>
+                                                <div class="footer-sociala-info">
+                                                    <p>Email: {{(config2('moonshine.setting.email'))?:''}}</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="footer_s_inner">
+                                                <div class="footer-sociala-icon">
+                                                    <i class="icofont-ui-clock"></i>
+                                                </div>
+                                                <div class="footer-sociala-info">
+                                                    <p>Время: 9:00-18:00pm</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6  col-lg-2">
+                            <div id="nav_menu-2" class="widget widget_nav_menu"><h2 class="widget-title">Продукция</h2>
+                                <div class="menu-useful-links-container">
+                                    <ul id="menu-useful-links" class="menu">
+                                        <li id="menu-item-6636"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Резисторы</a></li>
+                                    </ul>
+                                    <div class="pad_b15">Кованые изделия: </div>
+                                    <ul  class="menu">
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Двери</a></li>
+
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Решетки</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Беседки</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Скамейки</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Качели</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Кованная мебель</a></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6  col-lg-2">
+                            <div id="nav_menu-3" class="widget widget_nav_menu"><h2 class="widget-title">Структура</h2>
+                                <div class="menu-service-request-container">
+                                    <ul id="menu-service-request" class="menu">
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">О предприятии</a></li>
+
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Производство</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Продукция</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Услуги</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Структурные подразделения</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Корпоративные партнеры</a></li>
+
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Сообщества</a></li>
+
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Отзывы</a></li>
+
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Обучение</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Мероприятия</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">Контакты</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="#">1FITV</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6  col-lg-4">
+                            <div id="media_gallery-2" class="widget widget_media_gallery"><h2 class="widget-title">Фотогалерея
+                                    </h2>
+                                <div id="gallery-1"
+                                     class="gallery galleryid-8 gallery-columns-3 gallery-size-thumbnail">
+                                    <figure class="gallery-item">
+                                        <div class="gallery-icon landscape">
+                                            <a href="#"><img
+                                                    width="150" height="150"
+                                                    src="images/robotil-b5-150x150.jpg"
+                                                ></a>
+                                        </div>
+                                    </figure>
+
+                                    <figure class="gallery-item">
+                                        <div class="gallery-icon landscape">
+                                            <a href="#"><img
+                                                    width="150" height="150"
+                                                    src="images/robotil-b5-150x150.jpg"
+                                                ></a>
+                                        </div>
+                                    </figure>
+
+                                    <figure class="gallery-item">
+                                        <div class="gallery-icon landscape">
+                                            <a href="#"><img
+                                                    width="150" height="150"
+                                                    src="images/robotil-b5-150x150.jpg"
+                                                ></a>
+                                        </div>
+                                    </figure>
+
+                                    <figure class="gallery-item">
+                                        <div class="gallery-icon landscape">
+                                            <a href="#"><img
+                                                    width="150" height="150"
+                                                    src="images/robotil-b5-150x150.jpg"
+                                                ></a>
+                                        </div>
+                                    </figure>
+
+                                    <figure class="gallery-item">
+                                        <div class="gallery-icon landscape">
+                                            <a href="#"><img
+                                                    width="150" height="150"
+                                                    src="images/robotil-b5-150x150.jpg"
+                                                ></a>
+                                        </div>
+                                    </figure>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- END FOOTER MIDDLE AREA -->
+
+
+            <!-- FOOTER BOTTOM AREA -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- FOOTER COPYRIGHT STYLE 1 -->
+
+                        <div class="col-lg-6 col-md-6  col-sm-12">
+                            <div class="copy-right-text">
+                                <!-- FOOTER COPYRIGHT TEXT -->
+                                <p>
+                                   {{ date("Y") }} © {{(config2('moonshine.setting.contact_copy'))?:''}}</p>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6  col-sm-12">
+                            <div class="footer-menu">
+                                <!-- FOOTER COPYRIGHT MENU -->
+                                <ul id="menu-footer-menu" class="text-right">
+                                    <li id="menu-item-7373"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7373">
+                                        <a
+                                            href="#">О компании</a></li>
+                                    <li id="menu-item-7374"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7374">
+                                        <a
+                                            href="#">Услуги</a></li>
+                                    <li id="menu-item-6451"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6451">
+                                        <a
+                                            href="{{ route('contacts') }}">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- FOOTER COPYRIGHT STYLE 3 -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- END FOOTER BOTTOM AREA -->
+
+
+        </div>
+        <!-- middle and bottom END -->
+
+    </div>
 </div><!--.content_-->
 
 <link rel="stylesheet" id="wtitle-css"

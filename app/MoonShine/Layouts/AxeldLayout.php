@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\MoonShine\Layouts;
 
 
+use App\MoonShine\Pages\SettingPage;
 use App\MoonShine\Resources\MoonShineUserResource;
 use App\MoonShine\Resources\MoonShineUserRoleResource;
 use App\MoonShine\Resources\PageResource;
@@ -62,6 +63,7 @@ final class AxeldLayout extends AppLayout
                 MenuItem::make('Страницы', PageResource::class, 'lifebuoy'),
             ]),
             MenuGroup::make('Настройки', [
+            MenuItem::make( __('Константы'),  SettingPage::class  ),
             MenuItem::make( __('Медиа'),  MediaManagerPage::class  ),
                 ]),
 
@@ -164,7 +166,7 @@ final class AxeldLayout extends AppLayout
                                     now()->year,
                                 ))
                                 ->menu([
-                                    config('app.app_url') => 'Website',
+                                    config('app.url') => 'Website',
                                 ]),
                         ])->class('layout-page'),
                     ]),

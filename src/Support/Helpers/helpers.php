@@ -716,6 +716,34 @@ if (!function_exists('slugCheck')) {
         return $slug;
     }
 
+    /**
+     *  получение переменных из папки storage
+     */
+
+    if (!function_exists('config2')) {
+        function config2($path =  null)
+        {
+            if(is_null($path)) {
+                return '';
+            }
+            $ar = explode(".", $path);
+
+            $p = array_pop($ar); // последний элемент, это нужный ключ массива
+            $storage_congig = implode("/", $ar).'.php'; // складываеи в строку, и добавляем '.php', получаем точный путь файла
+
+            if (Storage::disk('config')->exists($storage_congig)) {
+                $result = include(storage_path('app/public/config/'. $storage_congig));
+                // если есть такой файл, то получим содержимое (должен быть массив (return array))
+            } else {
+                return '';
+            }
+
+
+            return (isset($result[$p]))? $result[$p] : '';
+        }
+
+    }
+
 
 }
 

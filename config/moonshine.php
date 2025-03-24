@@ -20,7 +20,7 @@ use MoonShine\Laravel\Pages\LoginPage;
 use MoonShine\Laravel\Pages\ProfilePage;
 
 return [
-    'media-manager' => [
+    'media_manager' => [
         'auto_menu' => false,
         'disk' => config('filesystem.default', 'public'),
         'allowed_ext' => 'jpg,jpeg,png,pdf,doc,docx,zip',
