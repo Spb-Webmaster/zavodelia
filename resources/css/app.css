@@ -1,4 +1,6 @@
 @import "./pagination.scss";
 @import "./general-style/width.scss";
 @import "./general-style/paddind.scss";
+@import "./form/loader.css";
+@import "./form/loader_map.css";
 @import "./style.scss";
