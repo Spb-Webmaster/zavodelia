@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\MoonShine\Layouts;
 
 
+use App\MoonShine\Pages\ContactPage;
 use App\MoonShine\Pages\SettingPage;
 use App\MoonShine\Resources\MoonShineUserResource;
 use App\MoonShine\Resources\MoonShineUserRoleResource;
@@ -56,10 +57,9 @@ final class AxeldLayout extends AppLayout
         return [
             MenuGroup::make('Пользователи', [
                 MenuItem::make('Админ', MoonShineUserResource::class, 'users'),
-               // MenuItem::make('Роль', MoonShineUserRoleResource::class, 'hashtag'),
-                //MenuItem::make('Пользователи', UserResource::class, 'user-group'),
             ]),
             MenuGroup::make('Материалы', [
+                MenuItem::make('Контакты', ContactPage::class, 'lifebuoy'),
                 MenuItem::make('Страницы', PageResource::class, 'lifebuoy'),
             ]),
             MenuGroup::make('Настройки', [
@@ -67,10 +67,7 @@ final class AxeldLayout extends AppLayout
             MenuItem::make( __('Медиа'),  MediaManagerPage::class  ),
                 ]),
 
- /*           MenuGroup::make('Аренда', [
-                MenuItem::make('Маршруты', RentRouteResource::class, 'map-pin'),
-                MenuItem::make('Корабли', RentShipResource::class, 'rocket-launch'),
-            ]),*/
+
 
 
 

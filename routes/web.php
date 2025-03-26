@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\MoonShine\Controllers\MoonshineContact;
 use App\MoonShine\Controllers\MoonshineSetting;
 use Illuminate\Support\Facades\Route;
 
@@ -23,6 +24,10 @@ Route::controller(ContactController::class)->group(function () {
 
 Route::controller(MoonshineSetting::class)->group(function () {
     Route::post('/moonshine/setting', 'setting');
+
+});
+Route::controller(MoonshineContact::class)->group(function () {
+    Route::post('/moonshine/contacts', 'contacts');
 
 });
 /*Route::controller(MoonshineIndex::class)->group(function () {

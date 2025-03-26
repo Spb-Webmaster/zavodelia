@@ -195,116 +195,11 @@
             </div> <!--  div extra -->
 
             <!-- MOBILE MENU AREA 222222222-->
-            <div class="home-2 mbm hidden-md hidden-lg  header_area main-menu-area">
-                <div class="menu_area mobile-menu">
-                    <nav style="display: block;">
-                        <ul id="menu-main-menu-1" class="main-menu clearfix">
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-7391">
-                                <a href="#">Home</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-19">
-                                        <a href="https://demo.themexbd.com/wpi/techite/" aria-current="page">Home
-                                            Main</a>
-                                    </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7415">
-                                        <a
-                                            href="https://demo.themexbd.com/wpi/techite/landing-page/">Landing Page</a>
-                                    </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7416">
-                                        <a
-                                            href="https://demo.themexbd.com/wpi/techite/video-page/">Video Page</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6337"><a
-                                    href="https://demo.themexbd.com/wpi/techite/about/">About</a></li>
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6350">
-                                <a href="#">Page</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7390">
-                                        <a href="#">Portfolio</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6354">
-                                                <a href="https://demo.themexbd.com/wpi/techite/portfolio-grid/">Portfolio
-                                                    Grid</a></li>
-                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6355">
-                                                <a href="https://demo.themexbd.com/wpi/techite/portfolio-modern/">Portfolio
-                                                    Modern</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6358">
-                                        <a href="https://demo.themexbd.com/wpi/techite/service/">Service</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6359">
-                                                <a href="https://demo.themexbd.com/wpi/techite/single-service/">Single
-                                                    Service</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6360">
-                                        <a
-                                            href="https://demo.themexbd.com/wpi/techite/team/">Team</a></li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6351">
-                                        <a
-                                            href="https://demo.themexbd.com/wpi/techite/faq/">Faq</a></li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6356">
-                                        <a
-                                            href="https://demo.themexbd.com/wpi/techite/pricing-plan/">Pricing Plan</a>
-                                    </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6444">
-                                        <a
-                                            href="https://demo.themexbd.com/wpi/techite/countdown/">Countdown</a></li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6352">
-                                        <a
-                                            href="https://demo.themexbd.com/wpi/techite/history/">History</a></li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6357">
-                                        <a
-                                            href="https://demo.themexbd.com/wpi/techite/privacy-policy-2/">Privacy
-                                            Policy</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7388">
-                                <a href="#">Event</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6348">
-                                        <a
-                                            href="https://demo.themexbd.com/wpi/techite/event-grid/">Event Grid</a></li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6349">
-                                        <a
-                                            href="https://demo.themexbd.com/wpi/techite/event-page/">Event Page</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7389">
-                                <a href="#">Blog</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6338">
-                                        <a
-                                            href="https://demo.themexbd.com/wpi/techite/blog/">Blog</a></li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6340">
-                                        <a
-                                            href="https://demo.themexbd.com/wpi/techite/blog-left-sidebar/">Blog Left
-                                            Sidebar</a></li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6339">
-                                        <a
-                                            href="https://demo.themexbd.com/wpi/techite/blog-left-2column/">Blog Left
-                                            2Column</a></li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6342">
-                                        <a
-                                            href="https://demo.themexbd.com/wpi/techite/blog-right-sidebar/">Blog Right
-                                            Sidebar</a></li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6341">
-                                        <a
-                                            href="https://demo.themexbd.com/wpi/techite/blog-right-2column/">Blog Right
-                                            2Column</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6346"><a
-                                    href="https://demo.themexbd.com/wpi/techite/contact/">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            @include('include.templates.menu.mobile_main_menu')
             <!-- END MOBILE MENU AREA 22222222222 -->
 
         </div>
+
 
         @yield('content')
 

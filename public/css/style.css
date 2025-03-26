@@ -290,6 +290,125 @@ mc4wp-form-fields p,
     position: relative;
 }
 
+.robotil-counter-bg {
+    width: 100%;
+    background-image: url(images/robotil-counter-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.robotil-counter-bg  .brptsize h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.breadcumb-inner {
+    font-size: 14px;
+}
+
+.background_F8F8F8 {
+    background-color: #F8F8F8 !important;
+}
+.ellipsis_500 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 500px;
+    width: 100%;
+}
+
+.ellipsis_600 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 600px;
+    width: 100%;
+}
+
+
+.desc p {
+    line-height: 1.3em;
+    padding: 9px 0;
+    font-style: normal;
+}
+
+.desc  h1 {
+    line-height: 1.1em;
+    padding: 13px 0;
+    font-style: normal;
+    font-size: 40px  !important;
+    color: #000;
+}
+
+.desc  h2 {
+    line-height: 1.1em;
+    padding: 13px 0;
+    font-style: normal;
+    font-size: 34px !important;
+}
+
+.desc  h3 {
+    line-height: 1.1em;
+    padding: 9px 0;
+    font-style: normal;
+    font-size: 30px !important;
+    color: #000;
+}
+
+.desc  h4 {
+    line-height: 1.1em;
+    padding: 8px 0;
+    font-style: normal;
+    font-size: 26px  !important;;
+}
+
+.desc  iframe, embed {
+    box-sizing: border-box;
+    border: 8px solid #EF533F;
+    border-radius: 24px;
+    margin: 16px 0;
+}
+
+.desc ul, .desc ol {
+    padding: 10px 10px 10px 6px;
+}
+
+.desc  ul li:before {
+    content: '';
+    display: inline-block;
+    border-radius: 10px;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    background: #cbdaed;
+    left: -4px;
+    top: 12px;
+}
+
+.desc  ul li {
+    padding: 5px 5px 5px 25px;
+    font-size: 16px;
+    position: relative;
+    line-height: 1.4em;
+}
+
+.desc  ol {
+    padding-left: 15px
+}
+
+.desc  ol li {
+    padding: 5px 5px 5px 5px;
+    font-size: 16px;
+    position: relative;
+    line-height: 1.4em;
+    list-style-type: decimal;
+}
+
+
+
+
+
 @media screen and (max-width: 767px) {
 
     .witr_all_mb_30 {

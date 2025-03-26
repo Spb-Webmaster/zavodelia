@@ -79,7 +79,7 @@ class SettingPage extends Page
 
 
                                    Collapse::make('', [
-                                        Text::make('Название', 'slogan2')->default((isset($slogan2))? $slogan2 :''),
+                                        Text::make('Слоган', 'slogan2')->default((isset($slogan2))? $slogan2 :''),
                                         Text::make('Название в логотипе', 'slogan1')->default((isset($slogan1))? $slogan1 :''),
 
 
@@ -104,6 +104,7 @@ class SettingPage extends Page
 
                                     Collapse::make('', [
                                         Text::make('Название компании', 'contact_name_company')->default((isset($contact_name_company))? $contact_name_company :''),
+                                        Text::make('Краткое название компании', 'contact_mimi_name_company')->default((isset($contact_mimi_name_company))? $contact_mimi_name_company :''),
                                         Text::make('Республика', 'contact_republic')->default((isset($contact_republic))? $contact_republic :''),
                                         Text::make('Адрес', 'contact_address')->default((isset($contact_address))? $contact_address :''),
                                         Text::make('Сокращенный адрес', 'contact_miniaddress')->default((isset($contact_miniaddress))? $contact_miniaddress :''),
