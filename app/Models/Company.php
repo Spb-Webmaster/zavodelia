@@ -10,6 +10,7 @@ class Company extends Model
 
     protected $fillable = [
         'title',
+        'subtitle',
         'slug',
         'image',
         'desc',

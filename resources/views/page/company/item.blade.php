@@ -27,8 +27,18 @@
 
     <section
         class="background_F8F8F8 elementor-section elementor-top-section elementor-element elementor-section-boxed elementor-section-height-default elementor-section-height-default pad_t40 pad_b40">
-        <div class="elementor-container elementor-column-gap-default">
 
+        <div class="elementor-container elementor-column-gap-default">
+        <div class="witr_section_title">
+            <div class="witr_section_title_inner text-center pad_b24">
+                <h1>{{ $item->title }}</h1>
+                {!!  (isset($item->subtitle))?'<h2>' .  $item->subtitle . '</h2>' : ''  !!}
+            </div>
+
+
+        </div>
+        </div>
+        <div class="elementor-container elementor-column-gap-default">
             <div class="desc">
                 {!!  $item->desc!!}
             </div>

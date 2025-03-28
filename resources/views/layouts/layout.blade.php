@@ -161,11 +161,11 @@
 
 
                                                     <div class="logo">
-                                                        <a class="main_sticky_main_l" href="#" title="Techite">
-                                                            <img src="/images/logo01.png" alt="Techite">
+                                                        <a class="main_sticky_main_l" href="#" >
+                                                            <img src="/images/logo01.png" >
                                                         </a>
-                                                        <a class="main_sticky_l" href="#" title="Techite">
-                                                            <img src="/images/logo02.png" alt="Techite">
+                                                        <a class="main_sticky_l" href="#" >
+                                                            <img src="/images/logo02.png" >
                                                         </a>
                                                     </div>
                                                 </div>

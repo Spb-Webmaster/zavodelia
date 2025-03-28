@@ -76,6 +76,8 @@ class CompanyResource extends ModelResource
                             Text::make('Заголовок', 'title')->required(),
                             Slug::make('Алиас', 'slug')
                                 ->from('title')->unique(),
+                            Text::make('Подзаголовок', 'subtitle'),
+
 
                         ]),
 
