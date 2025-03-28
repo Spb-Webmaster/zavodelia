@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Company\CompanyController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\MoonShine\Controllers\MoonshineContact;
@@ -17,6 +18,18 @@ Route::controller(ContactController::class)->group(function () {
     Route::get('/contacts', 'contacts')
         ->name('contacts');
 });
+
+
+
+Route::controller(CompanyController::class)->group(function () {
+
+    Route::get('/company', 'companies')
+        ->name('companies');
+    Route::get('/company/{slug}', 'company')
+        ->name('company');
+});
+
+
 
 /**
  * Из админки moonshine

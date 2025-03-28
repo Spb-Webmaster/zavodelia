@@ -25,3 +25,8 @@ $maxWidth: 1440;
 
     }
 }
+.menu-item-has-children {
+    ul.sub-menu {
+        width: 250px !important;
+    }
+}

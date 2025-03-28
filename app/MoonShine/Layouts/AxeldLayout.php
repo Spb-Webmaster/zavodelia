@@ -67,8 +67,8 @@ final class AxeldLayout extends AppLayout
                 ]),
                 ]),
             MenuGroup::make('Настройки', [
-                MenuItem::make(__('Константы'), SettingPage::class),
-                MenuItem::make(__('Медиа'), MediaManagerPage::class),
+                MenuItem::make(__('Константы'), SettingPage::class, 'cog'),
+                MenuItem::make(__('Медиа'), MediaManagerPage::class, 'film'),
             ]),
 
 

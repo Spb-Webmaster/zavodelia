@@ -2,4 +2,7 @@
   display: block;
   line-height: 1.4em; }
 
+.menu-item-has-children ul.sub-menu {
+  width: 250px !important; }
+
 /*# sourceMappingURL=style.css.map */

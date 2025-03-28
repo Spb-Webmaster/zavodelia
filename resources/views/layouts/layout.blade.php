@@ -162,10 +162,10 @@
 
                                                     <div class="logo">
                                                         <a class="main_sticky_main_l" href="#" title="Techite">
-                                                            <img src="images/logo01.png" alt="Techite">
+                                                            <img src="/images/logo01.png" alt="Techite">
                                                         </a>
                                                         <a class="main_sticky_l" href="#" title="Techite">
-                                                            <img src="images/logo02.png" alt="Techite">
+                                                            <img src="/images/logo02.png" alt="Techite">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -355,7 +355,7 @@
                                         <div class="gallery-icon landscape">
                                             <a href="#"><img
                                                     width="150" height="150"
-                                                    src="images/robotil-b5-150x150.jpg"
+                                                    src="/images/robotil-b5-150x150.jpg"
                                                 ></a>
                                         </div>
                                     </figure>
@@ -364,7 +364,7 @@
                                         <div class="gallery-icon landscape">
                                             <a href="#"><img
                                                     width="150" height="150"
-                                                    src="images/robotil-b5-150x150.jpg"
+                                                    src="/images/robotil-b5-150x150.jpg"
                                                 ></a>
                                         </div>
                                     </figure>
@@ -373,7 +373,7 @@
                                         <div class="gallery-icon landscape">
                                             <a href="#"><img
                                                     width="150" height="150"
-                                                    src="images/robotil-b5-150x150.jpg"
+                                                    src="/images/robotil-b5-150x150.jpg"
                                                 ></a>
                                         </div>
                                     </figure>
@@ -382,7 +382,7 @@
                                         <div class="gallery-icon landscape">
                                             <a href="#"><img
                                                     width="150" height="150"
-                                                    src="images/robotil-b5-150x150.jpg"
+                                                    src="/images/robotil-b5-150x150.jpg"
                                                 ></a>
                                         </div>
                                     </figure>
@@ -391,7 +391,7 @@
                                         <div class="gallery-icon landscape">
                                             <a href="#"><img
                                                     width="150" height="150"
-                                                    src="images/robotil-b5-150x150.jpg"
+                                                    src="/images/robotil-b5-150x150.jpg"
                                                 ></a>
                                         </div>
                                     </figure>
