@@ -7,6 +7,7 @@ namespace App\MoonShine\Resources;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Company;
 
+
 use MoonShine\Laravel\Enums\Action;
 use MoonShine\Laravel\Fields\Slug;
 use MoonShine\Laravel\Resources\ModelResource;
@@ -19,10 +20,12 @@ use MoonShine\UI\Components\Layout\Column;
 use MoonShine\UI\Components\Layout\Divider;
 use MoonShine\UI\Components\Layout\Grid;
 use MoonShine\UI\Fields\Date;
+use MoonShine\UI\Fields\File;
 use MoonShine\UI\Fields\ID;
 use MoonShine\Contracts\UI\FieldContract;
 use MoonShine\Contracts\UI\ComponentContract;
 use MoonShine\UI\Fields\Image;
+use MoonShine\UI\Fields\Json;
 use MoonShine\UI\Fields\Number;
 use MoonShine\UI\Fields\Switcher;
 use MoonShine\UI\Fields\Text;
@@ -110,6 +113,22 @@ class CompanyResource extends ModelResource
                                 ->hint('Растягивается на 100% ширины'),
 
                             TinyMce::make('Описание', 'desc'),
+
+                            Collapse::make('', [
+
+                            Json::make('Видеоматериал', 'video')->fields([
+                              Text::make('Заголовок  Видеоматериала', 'video_video_title')->hint('Не обязательно'),
+
+                                File::make('Видео', 'video_video_video')
+                                    ->dir('video')/* Директория где будут хранится файлы в storage (по умолчанию /) */
+                                    ->disk('moonshine') // Filesystems disk
+                                    //  ->allowedExtensions(['jpg', 'gif', 'png', 'svg'])/* Допустимые расширения */
+                                    ->removable(),
+                                Text::make('Ссылка на видео (YouTube)', 'video_video_youtube'),
+                                Text::make('Ссылка на видео (RuTube)', 'video_video_rutube'),
+
+                            ])->vertical()->creatable(limit: 30)->removable(),
+                            ]),
 
                             Image::make(__('Изображение дополнительное'), 'image2')
                                 ->dir('images')

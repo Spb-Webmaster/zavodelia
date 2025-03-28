@@ -13,6 +13,7 @@ class Company extends Model
         'subtitle',
         'slug',
         'image',
+        'video',
         'desc',
         'image2',
         'desc2',
@@ -29,7 +30,29 @@ class Company extends Model
 
     protected $casts = [
         'params' => 'collection',
+        'video' => 'collection',
     ];
+
+    public function getVideoVisibleAttribute()
+    {
+        if ($this->video) {
+            foreach ($this->video as $g) {
+
+                if ($g['video_video_video']) { // если хоть одно фото, то нужно!
+                    return true;
+                }
+                if ($g['video_video_youtube']) { // если хоть одно фото, то нужно!
+                    return true;
+                }
+                if ($g['video_video_rutube']) { // если хоть одно фото, то нужно!
+                    return true;
+                }
+
+            }
+        }
+        return false;
+
+    }
 
 
     protected static function boot()

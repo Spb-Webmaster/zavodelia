@@ -100,13 +100,7 @@ if (!function_exists('clearFolder')) {
 }
 
 
-if (!function_exists('module')) {
 
-    function module(): Module
-    {
-        return app(Module::class);
-    }
-}
 
 
 if (!function_exists('num2word')) {
@@ -200,27 +194,6 @@ if (!function_exists('active_linkParse')) {
 }
 
 
-if (!function_exists('active_linkReligion')) {
-    function active_linkReligion($array = null, string $class = 'active'): string|null
-    {
-
-        $parse_url = parse_url(url()->current(), PHP_URL_PATH) ?? '/';
-
-        if ($array) {
-            foreach ($array as $item) {
-
-                if (str_starts_with(parse_url(url()->current(), PHP_URL_PATH), trim($item))) {
-                    return $class;
-                }
-
-            }
-
-        }
-
-
-        return null;
-    }
-}
 
 
 if (!function_exists('route_name')) {
@@ -411,67 +384,7 @@ if (!function_exists('intervention')) {
 }
 
 
-if (!function_exists('role')) {
 
-    function role($id = null): string
-    {
-        if (!auth()->user()) {
-            return 'guest';
-        }
-
-        if ($id) {
-
-            $user = User::query()
-                ->where('id', $id)
-                ->first();
-            if ($user) {
-                if (isset($user->parent)) {
-                    if (strtolower($user->parent->name) == 'admin') {
-                        return 'admin';
-                    }
-                }
-
-                if ($user->senior == $user->id) {
-                    return 'senior';
-                }
-
-
-                if (isset($user->parent)) {
-                    if (strtolower($user->parent->name) == 'manager') {
-                        return 'manager';
-                    }
-                }
-
-
-                return 'user';
-            }
-            return 'error_id';
-
-        }
-        $id = (auth()->user()) ? auth()->user()->id : '';
-        if ($id) {
-
-            $user = User::query()
-                ->where('id', $id)
-                ->first();
-            if ($user) {
-                if (isset($user->parent)) {
-                    if (strtolower($user->parent->name) == 'admin') {
-                        return 'admin';
-                    }
-                }
-                if (isset($user->parent)) {
-                    if (strtolower($user->parent->name) == 'manager') {
-                        return 'manager';
-                    }
-                }
-                return 'user';
-            }
-        }
-        return 'error_id';
-
-    }
-}
 
 /**
  * операции с youtube
@@ -490,6 +403,7 @@ if (!function_exists('codeYoutube')) {
         return null;
     }
 }
+
 
 if (!function_exists('fullYoutube')) {
 

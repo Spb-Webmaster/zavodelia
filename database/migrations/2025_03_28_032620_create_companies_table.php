@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('companies', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->string('subtitle')->nullable();
             $table->string('slug')->unique();
             $table->string('image')->nullable();
             $table->text('desc')->nullable();
@@ -27,6 +28,9 @@ return new class extends Migration
             $table->string('metatitle')->nullable();
             $table->text('description')->nullable();
             $table->text('keywords')->nullable();
+            $table->json('video')->nullable();
+
+
             $table->timestamps();
         });
     }
