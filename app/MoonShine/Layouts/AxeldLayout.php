@@ -42,6 +42,7 @@ use MoonShine\UI\Components\{Breadcrumbs,
 use MoonShine\MenuManager\MenuGroup;
 use MoonShine\MenuManager\MenuItem;
 use YuriZoom\MoonShineMediaManager\Pages\MediaManagerPage;
+use App\MoonShine\Resources\CompanyResource;
 
 final class AxeldLayout extends AppLayout
 {
@@ -59,19 +60,19 @@ final class AxeldLayout extends AppLayout
                 MenuItem::make('Админ', MoonShineUserResource::class, 'users'),
             ]),
             MenuGroup::make('Материалы', [
-                MenuItem::make('Контакты', ContactPage::class, 'lifebuoy'),
-                MenuItem::make('Страницы', PageResource::class, 'lifebuoy'),
-            ]),
-            MenuGroup::make('Настройки', [
-            MenuItem::make( __('Константы'),  SettingPage::class  ),
-            MenuItem::make( __('Медиа'),  MediaManagerPage::class  ),
+                MenuItem::make('Контакты', ContactPage::class, 'document'),
+                MenuItem::make('Страницы', PageResource::class, 'document'),
+                MenuGroup::make('О нас', [
+                    MenuItem::make('Завод Элия', CompanyResource::class, 'document-duplicate'),
                 ]),
+                ]),
+            MenuGroup::make('Настройки', [
+                MenuItem::make(__('Константы'), SettingPage::class),
+                MenuItem::make(__('Медиа'), MediaManagerPage::class),
+            ]),
 
 
-
-
-
-
+            MenuItem::make('Companies', CompanyResource::class),
         ];
     }
 
@@ -84,6 +85,7 @@ final class AxeldLayout extends AppLayout
 
         // $colorManager->primary('#00000');
     }
+
     public function build(): Layout
     {
         return Layout::make([
@@ -155,8 +157,7 @@ final class AxeldLayout extends AppLayout
                             ]),
 
                             Footer::make()
-                                ->copyright(static fn(): string
-                                => sprintf(
+                                ->copyright(static fn(): string => sprintf(
                                     <<<'HTML'
                                         &copy; %d  ❤️  <a href="https://t.me/AxeldMaster" target="_blank">@AxeldMaster</a>
                                         HTML,
