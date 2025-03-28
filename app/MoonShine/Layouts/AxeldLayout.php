@@ -72,7 +72,6 @@ final class AxeldLayout extends AppLayout
             ]),
 
 
-            MenuItem::make('Companies', CompanyResource::class),
         ];
     }
 

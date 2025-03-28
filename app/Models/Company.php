@@ -13,6 +13,7 @@ class Company extends Model
         'subtitle',
         'slug',
         'image',
+        'docs',
         'video',
         'desc',
         'image2',
@@ -31,6 +32,7 @@ class Company extends Model
     protected $casts = [
         'params' => 'collection',
         'video' => 'collection',
+        'docs' => 'collection',
     ];
 
     public function getVideoVisibleAttribute()
@@ -47,6 +49,21 @@ class Company extends Model
                 if ($g['video_video_rutube']) { // если хоть одно фото, то нужно!
                     return true;
                 }
+
+            }
+        }
+        return false;
+
+    }
+    public function getDocsVisibleAttribute()
+    {
+        if ($this->docs) {
+            foreach ($this->docs as $g) {
+
+                if ($g['doc']) { // если хоть одно фото, то нужно!
+                    return true;
+                }
+
 
             }
         }

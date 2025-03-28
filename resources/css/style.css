@@ -8,4 +8,21 @@
 .witr_section_title {
   width: 100%; }
 
+.ob_video {
+  padding: 20px 0 10px 0; }
+
+@media (max-width: 900px) {
+  .ob_video iframe {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 270px !important; } }
+@media (max-width: 767px) {
+  .witr_section_title_inner h1, .witr_section_title_inner h3 {
+    font-size: 29px !important;
+    line-height: 100% !important; }
+
+  .block {
+    padding-right: 16px;
+    padding-left: 16px; } }
+
 /*# sourceMappingURL=style.css.map */

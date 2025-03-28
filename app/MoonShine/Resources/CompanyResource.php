@@ -59,7 +59,6 @@ class CompanyResource extends ModelResource
             Number::make('Сортировка', 'sorting')->buttons(),
 
 
-
         ];
     }
 
@@ -101,6 +100,8 @@ class CompanyResource extends ModelResource
 
 
                 ]),
+
+
                 Grid::make([
                     Column::make([
 
@@ -114,21 +115,56 @@ class CompanyResource extends ModelResource
 
                             TinyMce::make('Описание', 'desc'),
 
-                            Collapse::make('', [
 
-                            Json::make('Видеоматериал', 'video')->fields([
-                              Text::make('Заголовок  Видеоматериала', 'video_video_title')->hint('Не обязательно'),
+                            Grid::make([
 
-                                File::make('Видео', 'video_video_video')
-                                    ->dir('video')/* Директория где будут хранится файлы в storage (по умолчанию /) */
-                                    ->disk('moonshine') // Filesystems disk
-                                    //  ->allowedExtensions(['jpg', 'gif', 'png', 'svg'])/* Допустимые расширения */
-                                    ->removable(),
-                                Text::make('Ссылка на видео (YouTube)', 'video_video_youtube'),
-                                Text::make('Ссылка на видео (RuTube)', 'video_video_rutube'),
+                                Column::make([
 
-                            ])->vertical()->creatable(limit: 30)->removable(),
+
+                                    Collapse::make('Видеоматериал', [
+
+                                        Json::make('', 'video')->fields([
+                                            Text::make('Заголовок  Видеоматериала', 'video_video_title')->hint('Не обязательно'),
+
+                                            File::make('Видео', 'video_video_video')
+                                                ->dir('video')/* Директория где будут хранится файлы в storage (по умолчанию /) */
+                                                ->disk('moonshine') // Filesystems disk
+                                                //  ->allowedExtensions(['jpg', 'gif', 'png', 'svg'])/* Допустимые расширения */
+                                                ->removable(),
+                                            Text::make('Ссылка на видео (YouTube)', 'video_video_youtube'),
+                                            Text::make('Ссылка на видео (RuTube)', 'video_video_rutube'),
+
+                                        ])->vertical()->creatable(limit: 30)->removable(),
+                                    ]),
+
+
+
+
+                                ])->columnSpan(6),
+
+
+                                Column::make([
+
+                                    Collapse::make('Документы', [
+
+                                        Json::make('', 'docs')->fields([
+
+                                            Image::make('Документ', 'doc')
+                                                ->dir('docs')/** Директория где будут хранится файлы в storage (по умолчанию /)*/
+                                                ->allowedExtensions(['jpg', 'png', 'jpeg', 'gif', 'svg'])
+                                                ->removable(),
+                                            Text::make('Текст под документом', 'doc_text'),
+
+                                        ])->vertical()->creatable(limit: 30)->removable(),
+
+                                        //docs
+                                    ]),
+
+
+                                ])->columnSpan(6),
+
                             ]),
+
 
                             Image::make(__('Изображение дополнительное'), 'image2')
                                 ->dir('images')
@@ -138,17 +174,16 @@ class CompanyResource extends ModelResource
 
                             TinyMce::make('Описание дополнительное', 'desc2'),
 
+
                         ]),
 
-
                     ])->columnSpan(12),
+                ]),
 
 
 
                 ]),
-
-            ])
-        ];
+                ];
     }
 
     /**
