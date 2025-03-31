@@ -62,6 +62,7 @@ $maxWidth: 1440;
         border-radius: 8px;
     }
 }
+
 .desc {
 
     h1,h2,h3,h4,h5{
@@ -159,8 +160,6 @@ $maxWidth: 1440;
         list-style-type: decimal;
     }
 }
-
-
 
 @media (min-width: 768px) and (max-width: 991px) {
     .top-right-menu {

@@ -430,7 +430,7 @@
                                     <li id="menu-item-7373"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7373">
                                         <a
-                                            href="#">О компании</a></li>
+                                            href="/company/o-predpriyatii">О компании</a></li>
                                     <li id="menu-item-7374"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7374">
                                         <a
