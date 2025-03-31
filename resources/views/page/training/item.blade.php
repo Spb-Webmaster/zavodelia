@@ -5,6 +5,6 @@
     keywords="{{ (isset($item->keywords))? $item->keywords : '' }}"
 />
 @section('content')
-@include('page._partial._item')
+    @include('page._partial._item')
 @endsection
 

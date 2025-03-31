@@ -28,8 +28,17 @@
     <a href="#">Отзывы</a>
 </li>
 
-<li class="menu-item">
+<li class="menu-item {{ active_linkMenu(asset(route('trainings')), 'find')  }}  menu-item-has-children">
     <a href="#">Обучение</a>
+    <ul class="sub-menu">
+
+        @foreach($trainings as $training)
+            <li class="menu-item {{ active_linkMenu(asset(route('training', ['slug' => $training->slug ])), 'find')  }} ">
+                <a href="{{ ($training->url)? trim($training->url) : route('training', ['slug' => $training->slug ]) }}">{{ $training->title }}</a>
+            </li>
+        @endforeach
+
+    </ul>
 </li>
 
 <li

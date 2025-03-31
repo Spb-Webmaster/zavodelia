@@ -43,6 +43,7 @@ use MoonShine\MenuManager\MenuGroup;
 use MoonShine\MenuManager\MenuItem;
 use YuriZoom\MoonShineMediaManager\Pages\MediaManagerPage;
 use App\MoonShine\Resources\CompanyResource;
+use App\MoonShine\Resources\TrainingResource;
 
 final class AxeldLayout extends AppLayout
 {
@@ -65,7 +66,10 @@ final class AxeldLayout extends AppLayout
                 MenuGroup::make('О нас', [
                     MenuItem::make('Завод Элия', CompanyResource::class, 'document-duplicate'),
                 ]),
+                MenuGroup::make('Обучение', [
+                    MenuItem::make('Материалы обучения', TrainingResource::class, 'document-duplicate'),
                 ]),
+            ]),
             MenuGroup::make('Настройки', [
                 MenuItem::make(__('Константы'), SettingPage::class, 'cog'),
                 MenuItem::make(__('Медиа'), MediaManagerPage::class, 'film'),
