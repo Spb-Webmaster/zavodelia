@@ -130,8 +130,8 @@
                                 <div class="col-sm-12">
 
                                     <div class="mobile_menu_logo text-center">
-                                        <a href="#" title="{{(config2('moonshine.setting.slogan2'))?:''}}">
-                                            <img src="/images/logo01.png" alt="Techite">
+                                        <a href="#">
+                                            <img src="/images/logo01.png" alt="{{(config2('moonshine.setting.slogan2'))?:''}}">
                                         </a>
                                     </div>
                                 </div>

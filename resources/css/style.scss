@@ -162,6 +162,13 @@ $maxWidth: 1440;
 
 
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .top-right-menu {
+        padding-top: 10px;
+    }
+}
+
+
 @media (max-width: 900px) {
 .ob_video {
     iframe {
