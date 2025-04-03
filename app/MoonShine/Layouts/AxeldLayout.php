@@ -6,6 +6,7 @@ namespace App\MoonShine\Layouts;
 
 
 use App\MoonShine\Pages\ContactPage;
+use App\MoonShine\Pages\ProductPage;
 use App\MoonShine\Pages\SettingPage;
 use App\MoonShine\Resources\MoonShineUserResource;
 use App\MoonShine\Resources\MoonShineUserRoleResource;
@@ -44,6 +45,7 @@ use MoonShine\MenuManager\MenuItem;
 use YuriZoom\MoonShineMediaManager\Pages\MediaManagerPage;
 use App\MoonShine\Resources\CompanyResource;
 use App\MoonShine\Resources\TrainingResource;
+use App\MoonShine\Resources\ProductResource;
 
 final class AxeldLayout extends AppLayout
 {
@@ -65,6 +67,10 @@ final class AxeldLayout extends AppLayout
                 MenuItem::make('Страницы', PageResource::class, 'document'),
                 MenuGroup::make('О нас', [
                     MenuItem::make('Завод Элия', CompanyResource::class, 'document-duplicate'),
+                ]),
+                MenuGroup::make('Продукция', [
+                    MenuItem::make('Категория Продукции', ProductPage::class),
+                    MenuItem::make('Материалы продукции', ProductResource::class, 'document-duplicate'),
                 ]),
                 MenuGroup::make('Обучение', [
                     MenuItem::make('Материалы обучения', TrainingResource::class, 'document-duplicate'),

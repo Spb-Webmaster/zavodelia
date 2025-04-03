@@ -489,6 +489,11 @@
 <link rel="stylesheet" id="style_plugin-css"
       href="/css/style_plugin.css"
       type="text/css" media="all">
+<link rel="stylesheet"
+      href="/css/wevent.css"
+      type="text/css" media="all">
+
+
 <script type="text/javascript"
         src="/js/direction.js"
         id="direction-js"></script>

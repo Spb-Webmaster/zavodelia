@@ -162,9 +162,24 @@ $maxWidth: 1440;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+.background_F8F8F8 {
+    background-color: #F8F8F8 !important;
+}
+.background_F9F9F9  {
+    background-color: #F9F9F9 !important;
+}
+
+
+
+@media (min-width: 200px) and (max-width: 991px) {
     .top-right-menu {
         padding-top: 10px;
+    }
+    .menu-item-has-children ul.sub-menu {
+        width: 100% !important;
+        a {
+            text-transform: none !important;
+        }
     }
 }
 

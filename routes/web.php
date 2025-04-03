@@ -3,8 +3,10 @@
 use App\Http\Controllers\Company\CompanyController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Product\ProductController;
 use App\Http\Controllers\Training\TrainingController;
 use App\MoonShine\Controllers\MoonshineContact;
+use App\MoonShine\Controllers\MoonshineProduct;
 use App\MoonShine\Controllers\MoonshineSetting;
 use Illuminate\Support\Facades\Route;
 
@@ -51,6 +53,21 @@ Route::controller(TrainingController::class)->group(function () {
 /**
  * обучение
  */
+/**
+ * продукция
+ */
+
+Route::controller(ProductController::class)->group(function () {
+
+    Route::get('/product', 'products')
+        ->name('products');
+    Route::get('/product/{slug}', 'product')
+        ->name('product');
+});
+
+/**
+ * продукция
+ */
 
 
 /**
@@ -63,6 +80,10 @@ Route::controller(MoonshineSetting::class)->group(function () {
 });
 Route::controller(MoonshineContact::class)->group(function () {
     Route::post('/moonshine/contacts', 'contacts');
+
+});
+Route::controller(MoonshineProduct::class)->group(function () {
+    Route::post('/moonshine/product', 'product');
 
 });
 /*Route::controller(MoonshineIndex::class)->group(function () {
