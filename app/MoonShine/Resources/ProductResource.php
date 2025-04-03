@@ -104,6 +104,34 @@ class ProductResource extends ModelResource
 
                 ]),
 
+                Grid::make([
+                    Column::make([
+
+                        Collapse::make('Анонс', [
+
+                            Image::make(__('Анонс'), 'img')
+                                ->dir('images')
+                                ->allowedExtensions(['jpg', 'png', 'jpeg', 'gif', 'svg'])
+                                ->removable()
+                                ->hint('Изображение в анонс'),
+
+                        ]),
+
+
+                    ])->columnSpan(6),
+                    Column::make([
+
+                        Collapse::make('Краткое описание', [
+
+                            TinyMce::make('Описание', 'short_desc'),
+
+
+                        ]),
+
+
+                    ])->columnSpan(6),
+                ]),
+
 
                 Grid::make([
                     Column::make([

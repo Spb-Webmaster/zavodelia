@@ -16,8 +16,16 @@
     </ul>
 </li>
 
-<li class="menu-item">
+<li class="menu-item {{ active_linkMenu(asset(route('products')), 'find')  }}  menu-item-has-children">
     <a href="#">Производство</a>
+    <ul class="sub-menu">
+
+
+            <li class="menu-item {{ active_linkMenu(asset(route('products')), 'find')  }} ">
+                <a href="{{route('products')}}">{{ config2('moonshine.product.title') }}</a>
+            </li>
+
+    </ul>
 </li>
 
 <li class="menu-item">

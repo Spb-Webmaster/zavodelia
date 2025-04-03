@@ -119,6 +119,13 @@ table.table th {
 table.table td {
   line-height: 1.4em; }
 
+.table-responsive table.table p {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.techite_no_before:before {
+  z-index: -999 !important; }
+
 @media (min-width: 200px) and (max-width: 991px) {
   .top-right-menu {
     padding-top: 10px; }
@@ -139,6 +146,9 @@ table.table td {
 
   .block {
     padding-right: 16px;
-    padding-left: 16px; } }
+    padding-left: 16px; }
+
+  .event-page-title_adn {
+    padding-top: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
