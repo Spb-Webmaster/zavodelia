@@ -39,20 +39,11 @@
                                     <h1>{{ config2('moonshine.product.title') }}</h1>
                                     {!!  (config2('moonshine.product.subtitle'))?'<h2>' . config2('moonshine.product.subtitle')  . '</h2>' : ''  !!}
 
-
-
-
-
-
                                 </div>
                                 <div class="desc pad_b22">
                                     {!!  config2('moonshine.product.desc') !!}
 
-
-
-
                                 </div>
-
 
                             </div>
 
@@ -185,7 +176,7 @@
                     </div>
 
                     <div class="desc pad_b10 pad_t10">
-                        {!!  config2('moonshine.product.desc') !!}
+                        {!!  config2('moonshine.product.desc2') !!}
                     </div>
                 </div>
             </div>
