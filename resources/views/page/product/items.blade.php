@@ -38,9 +38,19 @@
                                 <div class="witr_section_title_inner text-center pad_b24">
                                     <h1>{{ config2('moonshine.product.title') }}</h1>
                                     {!!  (config2('moonshine.product.subtitle'))?'<h2>' . config2('moonshine.product.subtitle')  . '</h2>' : ''  !!}
+
+
+
+
+
+
                                 </div>
                                 <div class="desc pad_b22">
                                     {!!  config2('moonshine.product.desc') !!}
+
+
+
+
                                 </div>
 
 

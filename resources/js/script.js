@@ -9,6 +9,7 @@ import {yandex_map_object} from "./include/yandex_map";
 import {localDataPicker, datepicker_birthdate,  datepicker_event} from "./include/datapicker";
 import {tooltip} from "./include/tooltip";
 import {checkbox} from "./include/checkbox";
+import {table} from "./include/table";
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -23,9 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
     chosen() // стилизованный select
     localDataPicker() // календарик основные настройки
     datepicker_birthdate() // календарь дня рождения
-      datepicker_event() // datepicker - события event
+    datepicker_event() // datepicker - события event
     tooltip() // tooltip
     checkbox() // checkbox
+    table() // манипуляция с таблицей
 
 
 });
