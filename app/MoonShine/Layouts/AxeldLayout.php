@@ -46,6 +46,7 @@ use YuriZoom\MoonShineMediaManager\Pages\MediaManagerPage;
 use App\MoonShine\Resources\CompanyResource;
 use App\MoonShine\Resources\TrainingResource;
 use App\MoonShine\Resources\ProductResource;
+use App\MoonShine\Resources\UserResource;
 
 final class AxeldLayout extends AppLayout
 {
@@ -60,7 +61,9 @@ final class AxeldLayout extends AppLayout
     {
         return [
             MenuGroup::make('Пользователи', [
-                MenuItem::make('Админ', MoonShineUserResource::class, 'users'),
+                MenuItem::make('Админ', MoonShineUserResource::class, 'user'),
+                MenuItem::make('Users', UserResource::class, 'users'),
+
             ]),
             MenuGroup::make('Материалы', [
                 MenuItem::make('Контакты', ContactPage::class, 'document'),

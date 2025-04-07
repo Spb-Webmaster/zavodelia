@@ -15,6 +15,10 @@
     },
     "dependencies": {
         "@fancyapps/ui": "^5.0.36",
+        "@fontsource-variable/inter": "^5.2.5",
+        "@fontsource-variable/roboto-flex": "^5.2.5",
+        "@fontsource/philosopher": "^5.2.5",
+        "@fontsource/source-sans-pro": "^5.2.5",
         "imask": "^7.6.1",
         "jquery": "^3.7.1",
         "moment": "^2.30.1",

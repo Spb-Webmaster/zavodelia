@@ -11,7 +11,12 @@
 
         <!-- menu button -->
         <div class="donate-btn-header">
-            <a class="dtbtn" href="{{ route('contacts') }}">Контакты</a>
+            @auth()
+                <a class="dtbtn" href="{{ route('cabinet') }}">Кабинет</a>
+
+            @else
+                <a class="dtbtn" href="{{ route('login') }}">Войти</a>
+            @endauth
         </div>
 
     </div>

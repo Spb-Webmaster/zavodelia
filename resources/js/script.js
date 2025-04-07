@@ -10,6 +10,7 @@ import {localDataPicker, datepicker_birthdate,  datepicker_event} from "./includ
 import {tooltip} from "./include/tooltip";
 import {checkbox} from "./include/checkbox";
 import {table} from "./include/table";
+import {close_flash} from "./include/flash";
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -27,7 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
     datepicker_event() // datepicker - события event
     tooltip() // tooltip
     checkbox() // checkbox
-    table() // манипуляция с таблицей
+        /**  table() // манипуляция с таблицей */
+    close_flash() // закрыть окно
 
 
 });

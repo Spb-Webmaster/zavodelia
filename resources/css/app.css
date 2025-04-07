@@ -1,7 +1,38 @@
+@import "@fontsource/philosopher";
+@import "@fontsource/philosopher/400.css";
+@import "@fontsource/philosopher/400-italic.css";
+@import "@fontsource/philosopher/700.css";
+
+@import "@fontsource-variable/inter";
+@import '@fontsource/source-sans-pro/200-italic.css';
+@import '@fontsource/source-sans-pro/300-italic.css';
+@import '@fontsource/source-sans-pro/400-italic.css';
+@import '@fontsource/source-sans-pro/600-italic.css';
+@import '@fontsource/source-sans-pro/700-italic.css';
+@import '@fontsource/source-sans-pro/900-italic.css';
+
+@import '@fontsource-variable/roboto-flex';
+
+@import "./ui/jquery-ui.min.css";
 @import "./pagination.scss";
 @import "./general-style/width.scss";
 @import "./general-style/paddind.scss";
 @import "./form/loader.css";
 @import "./form/loader_map.css";
 @import "./block/doc.scss";
+@import "./auth/flash.scss";
+@import "./auth/register.scss";
+@import "./cabinet/calendar.scss";
+@import "./cabinet/articles.scss";
+@import "./cabinet/cabinet.scss";
+@import "./forms/checkbox2.scss";
+@import "./forms/checkbox.scss";
+@import "./forms/file.scss";
+@import "./forms/button.scss";
+@import "./forms/input.scss";
+@import "./forms/select.css";
+@import "./forms/form_modal/form_modal.scss";
+@import "./forms/form_modal/qr_modal.scss";
+@import "./forms/order_mini.scss";
+@import "./forms/loader.css";
 @import "./style.scss";
