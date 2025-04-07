@@ -212,7 +212,16 @@ table.table {
 }
 
 
-
+.table-primary {
+    td {
+        font-size: 18px;
+        color: #282828;
+        font-weight: 600;
+        vertical-align: middle !important;
+        text-transform: none;
+        line-height: 1.4em;
+    }
+}
 
 
 @media (min-width: 200px) and (max-width: 991px) {
