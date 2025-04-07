@@ -7,7 +7,7 @@
     class="block elementor-section elementor-top-section elementor-element elementor-section-boxed elementor-section-height-default elementor-section-height-default pad_t40 pad_b40">
 
 
-
+    <div class="elementor-widget-wrap elementor-element-populated">
 
     <div class="elementor-container elementor-column-gap-default">
 
@@ -56,6 +56,7 @@
 
 
         </div>
+    </div>
     </div>
     @if($item->image)
         <div class="elementor-container elementor-column-gap-default pad_t20 pad_b20">
