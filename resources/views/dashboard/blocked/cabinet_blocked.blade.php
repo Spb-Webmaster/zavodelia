@@ -1,4 +1,4 @@
-@extends('layouts.layout_cabinet')
+@extends('layouts.layout')
 <x-seo.meta
     title="Кабинет пользователя"
     description="Кабинет пользователя"
