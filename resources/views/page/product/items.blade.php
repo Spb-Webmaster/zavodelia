@@ -25,7 +25,7 @@
 
     </div>
 
-    </div>
+
     <section
         class="elementor-section background_F9F9F9 elementor-top-section elementor-element  elementor-section-boxed elementor-section-height-default elementor-section-height-default pad_t40 pad_b40">
         <div class="elementor-container elementor-column-gap-default">

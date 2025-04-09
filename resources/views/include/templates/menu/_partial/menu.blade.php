@@ -32,8 +32,8 @@
     <a href="#">Сообщества</a>
 </li>
 
-<li class="menu-item">
-    <a href="#">Отзывы</a>
+<li class="menu-item {{ active_linkMenu(asset(route('responces')), 'find')  }}">
+    <a href="{{route('responces')}}">Отзывы</a>
 </li>
 
 <li class="menu-item {{ active_linkMenu(asset(route('trainings')), 'find')  }}  menu-item-has-children">

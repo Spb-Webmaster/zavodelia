@@ -11,6 +11,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Product\ProductController;
+use App\Http\Controllers\ResponceController;
 use App\Http\Controllers\Training\TrainingController;
 use App\Http\Middleware\RedirectIfAuthenticated;
 use App\Http\Middleware\UserBlockedMiddleware;
@@ -158,6 +159,15 @@ Route::controller(ContactController::class)->group(function () {
 
     Route::get('/contacts', 'contacts')
         ->name('contacts');
+});
+
+/**
+ * отзывы
+ */
+Route::controller(ResponceController::class)->group(function () {
+
+    Route::get('/responces', 'responces')
+        ->name('responces');
 });
 
 /**

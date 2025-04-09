@@ -47,6 +47,7 @@ use App\MoonShine\Resources\CompanyResource;
 use App\MoonShine\Resources\TrainingResource;
 use App\MoonShine\Resources\ProductResource;
 use App\MoonShine\Resources\UserResource;
+use App\MoonShine\Resources\ResponceResource;
 
 final class AxeldLayout extends AppLayout
 {
@@ -74,6 +75,9 @@ final class AxeldLayout extends AppLayout
                 MenuGroup::make('Продукция', [
                     MenuItem::make('Категория Продукции', ProductPage::class),
                     MenuItem::make('Материалы продукции', ProductResource::class, 'document-duplicate'),
+                ]),
+                MenuGroup::make('Отзывы', [
+                    MenuItem::make('Отзывы', ResponceResource::class, 'chat-bubble-oval-left-ellipsis'),
                 ]),
                 MenuGroup::make('Обучение', [
                     MenuItem::make('Материалы обучения', TrainingResource::class, 'document-duplicate'),

@@ -19,6 +19,7 @@ use MoonShine\UI\Fields\Json;
 use MoonShine\UI\Fields\Number;
 use MoonShine\UI\Fields\Switcher;
 use MoonShine\UI\Fields\Text;
+use MoonShine\UI\Fields\Textarea;
 use PhpParser\Node\Stmt\Block;
 
 
@@ -82,7 +83,14 @@ class SettingPage extends Page
                                         Text::make('Слоган', 'slogan2')->default((isset($slogan2))? $slogan2 :''),
                                         Text::make('Название в логотипе', 'slogan1')->default((isset($slogan1))? $slogan1 :''),
 
+                                    ]),
+                                    Divider::make('Отзывы'),
 
+
+                                   Collapse::make('', [
+                                        Text::make('Название', 'title_responce')->default((isset($title_responce))? $title_responce :''),
+                                       Text::make('Название краткое', 'titlemini_responce')->default((isset($titlemini_responce))? $titlemini_responce :''),
+                                        Textarea::make('Краткое описание отзывов', 'text_responce')->default((isset($text_responce))? $text_responce :''),
 
                                     ]),
                                     Divider::make('Соц.сети'),

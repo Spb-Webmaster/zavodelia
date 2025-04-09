@@ -16,9 +16,12 @@ $maxWidth: 1440;
 }
 
 .block {
-    max-width: 1200px;
+    max-width: 1140px;
     margin: auto;
     position: relative;
+}
+.populated {
+    padding: 10px;
 }
 .flex {
     display: flex
