@@ -39,9 +39,10 @@ class ResponceViewModel
 
     public function responce_save($request, $user = null)
     {
-        $responces = Responce::query();
+        $responce = Responce::query();
+        settype($result, "array");
         if ($user) {
-            $result->create([
+           $result =  $responce->create([
                 'title' => 'Отзыв от ' . $user->name,
                 'user_id' => $user->id,
                 'desc' => textarea($request->feedback),
@@ -52,7 +53,7 @@ class ResponceViewModel
         } else {
 
             $user = auth()->user();
-            $result->create([
+            $result =  $responce->create([
                 'title' => 'Отзыв от ' . $user->name,
                 'user_id' => $user->id,
                 'desc' => textarea($request->feedback),
