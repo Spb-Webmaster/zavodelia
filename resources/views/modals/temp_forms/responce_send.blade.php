@@ -19,19 +19,7 @@
 
             <div class="new__temp_middle">
              <div class="alax_inputs">
-                <div class="text_input">
-                    <x-forms.text-input_fromLabel
-                        type="text"
-                        name="title"
-                        placeholder="Заголовок"
-                        value="{{ old('title')?:'' }}"
-                        required="true"
-                        class="input title"
-                    />
-                    <x-forms.error class="error_title"/>
 
-
-                </div>
 
                  <div class="text_input">
                      <x-forms.textarea

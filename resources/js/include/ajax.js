@@ -6,7 +6,8 @@ export function responce_send() {
     $('body').on('click', '.responce_send__js', function (event) {
 
         var Parents = $(this).parents('.F_form');
-        var Title = Parents.find('input[name="title"]').val();
+     //   var Title = Parents.find('input[name="title"]').val();
+        var Title = 'От названия отказались'; /** записывается имя пользователя **/
         var Feedback = Parents.find('textarea[name="feedback"]').val();
 
 
