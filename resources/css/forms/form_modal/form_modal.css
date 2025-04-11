@@ -43,4 +43,13 @@
   padding: 9px 0;
   display: block; }
 
+h6.F_h2 {
+  color: #ff8f27 !important;
+  font-size: 17px; }
+
+.text_input .witr_btn {
+  cursor: pointer;
+  font-size: 22px;
+  padding: 10px 50px; }
+
 /*# sourceMappingURL=form_modal.css.map */

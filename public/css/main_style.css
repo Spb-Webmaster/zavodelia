@@ -143,13 +143,13 @@ a:hover {
 }
 
 button:focus, input:focus {
-    border-color: transparent;
-    outline-color: transparent
+/*    border-color: transparent;
+    outline-color: transparent*/
 }
 
 textarea:focus {
-    border-color: transparent;
-    outline-color: transparent
+/*    border-color: transparent;
+    outline-color: transparent*/
 }
 
 hr {

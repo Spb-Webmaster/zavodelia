@@ -19,6 +19,8 @@ $maxWidth: 1440;
     font-family: "Philosopher", "Arial Narrow", Arial, Helvetica, sans-serif;
 }
 
+
+
 .F_form {
     padding: 0 !important;
     border-radius: 12px !important;
@@ -99,4 +101,18 @@ $maxWidth: 1440;
 
     }
 }
+
+h6.F_h2 {
+        color:   #ff8f27 !important;
+    font-size: 17px;
+    }
+
+.text_input {
+    .witr_btn {
+        cursor: pointer;
+        font-size: 22px;
+        padding: 10px 50px;
+    }
+}
+
 

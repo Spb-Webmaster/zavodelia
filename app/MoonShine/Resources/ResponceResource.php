@@ -39,9 +39,9 @@ class ResponceResource extends ModelResource
 
     protected string $title = 'Отзывы';
 
-    protected string $column = 'sorting';
+    protected string $column = 'created_at';
 
-    protected string $sortColumn = 'sorting';
+    protected string $sortColumn = 'created_at';
 
     protected ?ClickAction $clickAction = ClickAction::EDIT;
 

@@ -145,6 +145,26 @@ table.table td {
   text-transform: none;
   line-height: 1.4em; }
 
+.witr_btn_style_right {
+  display: flex;
+  justify-content: end;
+  padding: 20px 0; }
+  .witr_btn_style_right a {
+    font-size: 21px;
+    padding: 8px 30px; }
+
+.em_single_testimonial {
+  width: 100%; }
+  .em_single_testimonial .em_testi_text {
+    width: 100%;
+    padding-bottom: 24px; }
+  .em_single_testimonial .em_test_thumb img {
+    min-width: 73px;
+    height: 73px; }
+  .em_single_testimonial .em_testi_title span {
+    font-weight: 400;
+    text-transform: none; }
+
 @media (min-width: 200px) and (max-width: 991px) {
   .top-right-menu {
     padding-top: 10px; }

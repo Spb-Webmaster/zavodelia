@@ -11,7 +11,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Product\ProductController;
-use App\Http\Controllers\ResponceController;
+use App\Http\Controllers\Responce\ResponceController;
 use App\Http\Controllers\Training\TrainingController;
 use App\Http\Middleware\RedirectIfAuthenticated;
 use App\Http\Middleware\UserBlockedMiddleware;
@@ -147,6 +147,10 @@ Route::controller(AjaxController::class)->group(function () {
 
     /** загрузка аватара*/
     Route::post('/cabinet/upload-avatar', 'uploadAvatar')->name('uploadAvatar');
+
+    Route::post('/responce-mail/responce-send', 'responce_send')
+        ->middleware(UserPublishedMiddleware::class);
+
 
 
 });

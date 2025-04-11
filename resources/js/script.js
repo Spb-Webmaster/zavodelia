@@ -1,4 +1,5 @@
 import {
+    responce_send,
     upload_f
 } from './include/ajax';
 import { imask } from './include/imask';
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     checkbox() // checkbox
         /**  table() // манипуляция с таблицей */
     close_flash() // закрыть окно
+    responce_send() // зотправить отзыв
 
 
 });

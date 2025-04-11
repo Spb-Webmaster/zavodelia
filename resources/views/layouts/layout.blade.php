@@ -455,7 +455,7 @@
 
     </div>
 </div><!--.content_-->
-
+@include('modals.temp_forms.responce_send')
 <link rel="stylesheet" id="wtitle-css"
       href="/css/wtitle.css"
       type="text/css" media="all">
