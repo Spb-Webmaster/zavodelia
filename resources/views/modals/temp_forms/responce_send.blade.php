@@ -36,7 +36,7 @@
 
                 <div class="text_input pad_t26_important">
                 <x-forms.button_call_me class="responce_send__js">
-                    {{__('Отправить заявку')}}
+                    {{__('Отправить отзыв')}}
                 </x-forms.button_call_me>
                 </div>
 </div><!--.alax_inputs-->

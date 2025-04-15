@@ -301,100 +301,33 @@
                         <div class="col-sm-12 col-md-6  col-lg-2">
                             <div id="nav_menu-3" class="widget widget_nav_menu"><h2 class="widget-title">Структура</h2>
                                 <div class="menu-service-request-container">
-                                    <ul id="menu-service-request" class="menu">
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">О предприятии</a></li>
-
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Производство</a></li>
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Продукция</a></li>
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Услуги</a></li>
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Структурные подразделения</a></li>
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Корпоративные партнеры</a></li>
-
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Сообщества</a></li>
-
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Отзывы</a></li>
-
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Обучение</a></li>
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Мероприятия</a></li>
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Контакты</a></li>
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">1FITV</a></li>
-                                    </ul>
+                            @include('include.templates.menu.footer_menu')
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6  col-lg-4">
-                            <div id="media_gallery-2" class="widget widget_media_gallery"><h2 class="widget-title">Фотогалерея
+                            <div id="media_gallery-2" class="widget widget_media_gallery">
+                                <h2 class="widget-title">Продукция
                                     </h2>
                                 <div id="gallery-1"
                                      class="gallery galleryid-8 gallery-columns-3 gallery-size-thumbnail">
-                                    <figure class="gallery-item">
-                                        <div class="gallery-icon landscape">
-                                            <a href="#"><img
-                                                    width="150" height="150"
-                                                    src="/images/robotil-b5-150x150.jpg"
-                                                ></a>
-                                        </div>
-                                    </figure>
+                                    @if(isset($products))
+                                        @foreach($products as $item)
+                                            <figure class="gallery-item">
+                                                <div class="gallery-icon landscape">
+                                                    <a href="{{ route('product', ['slug' => $item->slug]) }}"><img
+                                                            width="150" height="150"
+                                                            src="{{ asset(intervention('150x150', $item->img, 'products')) }}"
+                                                        ></a>
+                                                </div>
+                                            </figure>
+                                        @endforeach
+                                    @endif
 
-                                    <figure class="gallery-item">
-                                        <div class="gallery-icon landscape">
-                                            <a href="#"><img
-                                                    width="150" height="150"
-                                                    src="/images/robotil-b5-150x150.jpg"
-                                                ></a>
-                                        </div>
-                                    </figure>
 
-                                    <figure class="gallery-item">
-                                        <div class="gallery-icon landscape">
-                                            <a href="#"><img
-                                                    width="150" height="150"
-                                                    src="/images/robotil-b5-150x150.jpg"
-                                                ></a>
-                                        </div>
-                                    </figure>
 
-                                    <figure class="gallery-item">
-                                        <div class="gallery-icon landscape">
-                                            <a href="#"><img
-                                                    width="150" height="150"
-                                                    src="/images/robotil-b5-150x150.jpg"
-                                                ></a>
-                                        </div>
-                                    </figure>
 
-                                    <figure class="gallery-item">
-                                        <div class="gallery-icon landscape">
-                                            <a href="#"><img
-                                                    width="150" height="150"
-                                                    src="/images/robotil-b5-150x150.jpg"
-                                                ></a>
-                                        </div>
-                                    </figure>
+
 
                                 </div>
                             </div>
