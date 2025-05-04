@@ -250,38 +250,15 @@
                                             <div class="witr_section_title">
                                                 <div class="witr_section_title_inner text-left">
 
-                                                    <!-- icon position -->
 
-                                                    <!-- end icon position -->
+                                                    <h2>Производственное предприятие</h2>
 
+                                                    <h3>АО «Завод Элия»</h3>
 
-                                                    <!-- title top -->
-                                                    <h2>Our Feature</h2>
+                                                    <h1>основан в 1967 году </h1>
 
-                                                    <!-- icon position -->
-
-                                                    <!-- end icon position -->
-
-
-                                                    <!-- title middle -->
-                                                    <h3> Best Benefits Of Using Latest </h3>
-                                                    <!-- title bottom -->
-                                                    <h1>Artificial Intelligence</h1>
-
-                                                    <!-- icon position -->
-
-                                                    <!-- image -->
-                                                    <!-- icon -->
-
-                                                    <!-- bar -->
-                                                    <!-- circle bar -->
-
-
-                                                    <!-- end icon position -->
-
-                                                    <!-- content -->
                                                 </div>
-                                                <!-- inner title -->
+
 
                                             </div>
                                         </div>
@@ -299,35 +276,7 @@
                                             <div class="witr_section_title">
                                                 <div class="witr_section_title_inner text-left">
 
-                                                    <!-- icon position -->
-
-                                                    <!-- end icon position -->
-
-
-                                                    <!-- title top -->
-
-                                                    <!-- icon position -->
-
-                                                    <!-- end icon position -->
-
-
-                                                    <!-- title middle -->
-                                                    <!-- title bottom -->
-
-                                                    <!-- icon position -->
-
-                                                    <!-- image -->
-                                                    <!-- icon -->
-
-                                                    <!-- bar -->
-                                                    <!-- circle bar -->
-
-
-                                                    <!-- end icon position -->
-
-                                                    <!-- content -->
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius
-                                                        mod tempor incididunt ut labore et dolore magna aliqua enim ad. </p>
+                                                    <p>За последние годы предприятие выросло в современное Производственное объединение с многотысячным коллективом, имеющем в своем составе пять заводов</p>
                                                 </div>
                                                 <!-- inner title -->
 
@@ -376,8 +325,8 @@
                                                                          class="attachment-large size-large wp-image-7280"
                                                                          alt="">
                                                                     <div class="witr_content_pslide">
-                                                                        <h3><a href="#" tabindex="0">THE ROLE OF PROCESS
-                                                                                AUTOMATION</a>
+                                                                        <h3><a href="/product/rezistory-s5-5" tabindex="0">
+                                                                                Резисторы С5-5</a>
                                                                         </h3>
                                                                     </div>
                                                                 </div>
@@ -404,8 +353,8 @@
                                                                     <div class="witr_content_pslide">
 
 
-                                                                        <h3><a href="#" tabindex="0">Digital Robotic
-                                                                                Services Company?</a></h3>
+                                                                        <h3><a href="/product/rezistory-s5-5v-1" tabindex="0">
+                                                                                Резисторы С5-5В</a></h3>
 
                                                                     </div>
 
@@ -433,8 +382,7 @@
                                                                          class="attachment-large size-large wp-image-7279"
                                                                          alt="">
                                                                     <div class="witr_content_pslide">
-                                                                        <h3><a href="#" tabindex="0">Using Latest
-                                                                                Artificial Intelligence.</a></h3>
+                                                                        <h3><a href="/product/rezistory-s5-16v" tabindex="0">Резисторы С5-16В</a></h3>
                                                                     </div>
 
                                                                 </div>
@@ -511,7 +459,7 @@
                                                     <div class="witr_btn_sinner">
 
 
-                                                        <a href="#" class="witr_bbtn">MORE SERVICE NOW<!-- icon -->
+                                                        <a href="/product" class="witr_bbtn">Вся Продукция<!-- icon -->
 
                                                         </a>
 

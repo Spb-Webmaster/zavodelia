@@ -130,8 +130,9 @@
                                 <div class="col-sm-12">
 
                                     <div class="mobile_menu_logo text-center">
-                                        <a href="#">
-                                            <img src="/images/logo01.png" alt="{{(config2('moonshine.setting.slogan2'))?:''}}">
+                                        <a href="/">
+                                            <img src="{{ Storage::url('images/logo/Elia-logo.svg') }}" width="113" alt="{{(config2('moonshine.setting.slogan2'))?:''}}" />
+
                                         </a>
                                     </div>
                                 </div>
@@ -161,11 +162,11 @@
 
 
                                                     <div class="logo">
-                                                        <a class="main_sticky_main_l" href="#" >
-                                                            <img src="/images/logo01.png" >
+                                                        <a class="main_sticky_main_l" href="/" >
+                                                            <img src="{{ Storage::url('images/logo/Elia-logo.svg') }}" width="113" />
                                                         </a>
-                                                        <a class="main_sticky_l" href="#" >
-                                                            <img src="/images/logo02.png" >
+                                                        <a class="main_sticky_l" href="/" >
+                                                            <img src="{{ Storage::url('images/logo/Elia-logo.svg') }}" width="113" />
                                                         </a>
                                                     </div>
                                                 </div>
