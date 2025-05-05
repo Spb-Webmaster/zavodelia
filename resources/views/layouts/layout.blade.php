@@ -131,7 +131,7 @@
 
                                     <div class="mobile_menu_logo text-center">
                                         <a href="/">
-                                            <img src="{{ Storage::url('images/logo/Elia-logo.svg') }}" width="113" alt="{{(config2('moonshine.setting.slogan2'))?:''}}" />
+                                            <img src="{{ Storage::url('images/logo/Elia-logo2.svg') }}" width="113" alt="{{(config2('moonshine.setting.slogan2'))?:''}}" />
 
                                         </a>
                                     </div>
@@ -163,7 +163,7 @@
 
                                                     <div class="logo">
                                                         <a class="main_sticky_main_l" href="/" >
-                                                            <img src="{{ Storage::url('images/logo/Elia-logo.svg') }}" width="113" />
+                                                            <img src="{{ Storage::url('images/logo/Elia-logo2.svg') }}" width="113" />
                                                         </a>
                                                         <a class="main_sticky_l" href="/" >
                                                             <img src="{{ Storage::url('images/logo/Elia-logo.svg') }}" width="113" />
