@@ -201,5 +201,13 @@ PWA
 
   .event-page-title_adn {
     padding-top: 20px; } }
+@media (max-width: 767px) {
+  #scrollUp {
+    bottom: 21px !important;
+    right: 30px !important; }
+
+  .box-icon .circle {
+    top: -44px !important;
+    left: 17px !important; } }
 
 /*# sourceMappingURL=style.css.map */

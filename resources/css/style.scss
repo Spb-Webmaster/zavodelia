@@ -314,3 +314,16 @@ PWA
         }
     }
 
+@media (max-width: 767px) {
+    #scrollUp {
+        bottom: 21px !important;
+        right: 30px !important;
+    }
+    .box-icon {
+        .circle {
+            top: -44px !important;
+            left: 17px !important;
+
+        }
+    }
+}
