@@ -11,6 +11,7 @@
     'resources/css/app.css',
     'resources/js/app.js',
     ])
+    @PwaHead <!-- PWA meta tags directive -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -482,7 +483,8 @@
 
 
 <a id="scrollUp" href="#top" style="display: none; position: fixed; z-index: 2147483647;"><i
-        class="icofont-thin-up"></i></a></body>
+        class="icofont-thin-up"></i></a>
+@RegisterServiceWorkerScript <!-- Service worker registration -->
 </body>
 </html>
 
