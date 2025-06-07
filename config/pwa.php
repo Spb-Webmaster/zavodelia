@@ -20,10 +20,10 @@ return [
 
     'manifest' => [
         'name' => 'Акционерное общество «Завод Элия»',
-        'short_name' => 'LPT',
+        'short_name' => 'Элия',
         'background_color' => '#6777ef',
         'display' => 'fullscreen',
-        'description' => 'A Progressive Web Application setup for Laravel projects.',
+        'description' => 'Веб сайт компании АО «Завод Элия»',
         'theme_color' => '#6777ef',
         'icons' => [
             [
