@@ -256,6 +256,22 @@ width: 100%;
     }
 }
 
+/**
+PWA
+ */
+.box-icon {
+    .circle {
+        top: -67px !important;
+        left: -54px !important;
+        img {
+            border-radius: 30px !important;
+
+        }
+    }
+}
+/**
+//PWA
+ */
 @media (min-width: 200px) and (max-width: 991px) {
     .top-right-menu {
         padding-top: 10px;
@@ -268,24 +284,8 @@ width: 100%;
     }
 }
 
-/**
-PWA
- */
-.box-icon {
-    .circle {
-        top: -67px !important;
-        left: -54px !important;
-        img {
-
-            border-radius: 30px !important;
 
 
-        }
-    }
-}
-/**
-//PWA
- */
 
     @media (max-width: 900px) {
         .ob_video {
@@ -296,6 +296,9 @@ PWA
             }
         }
     }
+
+
+
     @media (max-width: 767px) {
         .witr_section_title_inner h1, .witr_section_title_inner h3 {
             font-size: 29px !important;
@@ -310,4 +313,4 @@ PWA
             padding-top: 20px;
         }
     }
-}
+
