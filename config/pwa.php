@@ -21,10 +21,10 @@ return [
     'manifest' => [
         'name' => 'Акционерное общество «Завод Элия»',
         'short_name' => 'Элия',
-        'background_color' => '#6777ef',
+        'background_color' => '#EF533F',
         'display' => 'fullscreen',
         'description' => 'Веб сайт компании АО «Завод Элия»',
-        'theme_color' => '#6777ef',
+        'theme_color' => '#EF533F',
         'icons' => [
             [
                 'src' => 'logo.png',

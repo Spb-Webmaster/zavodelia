@@ -1,11 +1,11 @@
 {
-    "name": "Laravel PWA",
-    "short_name": "LPT",
+    "name": "Акционерное общество «Завод Элия»",
+    "short_name": "Элия",
     "start_url": "/",
-    "background_color": "#000000",
-    "description": "A Progressive Web Application setup for Laravel projects.",
+    "background_color": "#EF533F",
+    "description": "Веб сайт компании АО «Завод Элия»",
     "display": "fullscreen",
-    "theme_color": "#000000",
+    "theme_color": "#EF533F",
     "icons": [
         {
             "src": "logo.png",
