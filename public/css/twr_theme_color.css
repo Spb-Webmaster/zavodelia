@@ -7,11 +7,11 @@ h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
 }
 
 a {
-    color: #ff9800
+    color: #002d8e
 }
 
 a:hover {
-    color: #ff8f27
+    color: #369ed1
 }
 
 ::-moz-selection {
@@ -51,11 +51,11 @@ a:hover {
 }
 
 .blog-left-side .widget ul li a:hover, .blog-left-side .widget ul li:hover::before {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .r-post-content h3 a:hover, .r-post-content h3:hover, .tagcloud a:hover, .widget_archive ul li a:hover, .widget_archive ul li:hover:before, .widget_categories ul li a:hover, .widget_categories ul li:hover:before {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .tagcloud a:hover, table#wp-calendar td#today, table#wp-calendar td#today a {
@@ -99,7 +99,7 @@ blockquote code {
 }
 
 .creative_header_menu > ul > li:hover > a, .techite_menu > ul > li.current > a, .techite_menu > ul > li:hover > a {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .techite_menu ul .sub-menu li a, .techite_menu ul .sub-menu li:before {
@@ -107,7 +107,7 @@ blockquote code {
 }
 
 .techite_menu ul .sub-menu .sub-menu .sub-menu .sub-menu li:hover > a, .techite_menu ul .sub-menu .sub-menu .sub-menu li:hover > a, .techite_menu ul .sub-menu .sub-menu li:hover > a, .techite_menu ul .sub-menu li:hover:before, .techite_menu ul .sub-menu li:hover > a {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .techite_nav_area.prefix .techite_menu > ul > li > a {
@@ -115,7 +115,7 @@ blockquote code {
 }
 
 .techite_nav_area.prefix .techite_menu > ul > li.current > a {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .heading_style_2 .techite_menu > ul > li > a {
@@ -163,7 +163,7 @@ blockquote code {
 }
 
 .prefix .right_close_class .right_sideber_menu i, .right_close_class .right_sideber_menu i {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .right_sideber_menu_inner .techite-description-area .social-icons a:hover {
@@ -183,7 +183,7 @@ blockquote code {
 }
 
 .btn.btn-bordered {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .btn.btn-bordered:hover {
@@ -219,7 +219,7 @@ blockquote code {
 }
 
 .breadcumb-inner li a:hover {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .techite-blog-meta-left a, .techite-blog-meta-left span {
@@ -227,7 +227,7 @@ blockquote code {
 }
 
 .techite-blog-meta-left i {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .techite-blog-meta-right a, .techite-blog-meta-right span {
@@ -243,7 +243,7 @@ blockquote code {
 }
 
 .techite-single-icon a {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .techite-single-icon a:hover, .techite-single-icon-inner a:hover {
@@ -263,7 +263,7 @@ blockquote code {
 }
 
 .reply_date span.span_right {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .comment_techite_btn {
@@ -271,7 +271,7 @@ blockquote code {
 }
 
 .not-found-inner h2 {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .not-found-inner a {
@@ -291,7 +291,7 @@ table#wp-calendar td#today a {
 }
 
 .footer-top-address h2 span {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .footer-top-inner h2 {
@@ -299,7 +299,7 @@ table#wp-calendar td#today a {
 }
 
 .footer-top-inner h2 span {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .footer-top-inner p {
@@ -315,7 +315,7 @@ table#wp-calendar td#today a {
 }
 
 .footer-middle .widget ul li a:hover, .footer-middle .widget ul li:hover:before {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .recent-post-text h4 a {
@@ -323,11 +323,11 @@ table#wp-calendar td#today a {
 }
 
 .recent-post-text h4 a:hover {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .footer-middle .recent-post-text > h4 a:hover {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .footer-widget.address, .footer-widget.address p {
@@ -339,11 +339,11 @@ table#wp-calendar td#today a {
 }
 
 .copy-right-text a {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .copy-right-text a:hover, .footer-menu ul li a:hover {
-    color: #ff8f27
+    color: #369ed1
 }
 
 #scrollUp i {
@@ -356,7 +356,7 @@ table#wp-calendar td#today a {
 }
 
 .mini_shop_content a span.count {
-    background: #ff8f27;
+    background: #369ed1;
     color: #fff
 }
 
@@ -381,7 +381,7 @@ table#wp-calendar td#today a {
 }
 
 .creative_header_icon i {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .creative_header_address_text > p > a {
@@ -401,7 +401,7 @@ table#wp-calendar td#today a {
 }
 
 .top_crmenu_i_list li a i {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .top_crmenu_i_list li a i:hover {
@@ -449,7 +449,7 @@ table#wp-calendar td#today a {
 }
 
 .blog-content h2 a:hover {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .techite-blog-meta-left a, .techite-blog-meta-left span {
@@ -457,11 +457,11 @@ table#wp-calendar td#today a {
 }
 
 .techite-blog-meta-left a:hover, .techite-blog-meta-left span:hover {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .techite-blog-meta-left i {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .techite-blog-meta-right a, .techite-blog-meta-right span {
@@ -485,7 +485,7 @@ table#wp-calendar td#today a {
 }
 
 .reply_date span.span_right {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .comment_field .input-field label, .comment_field .textarea-field label {
@@ -501,7 +501,7 @@ table#wp-calendar td#today a {
 }
 
 .blog-page-title h2 a:hover {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .mc4wp-form-fields input {
@@ -517,7 +517,7 @@ table#wp-calendar td#today a {
 }
 
 .mc4wp-alert p {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .mc4wp-form-fields input::-moz-placeholder {
@@ -541,7 +541,7 @@ table#wp-calendar td#today a {
 }
 
 .footer-middle .mc4wp-form-fields button:hover {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .footer-middle .checkbox_witr span {
@@ -585,11 +585,11 @@ span.eleft {
 }
 
 .tutor-star-rating-group {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .tutor-course-loop-meta > div i {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .tutor-loop-author > div span {
@@ -613,7 +613,7 @@ span.eleft {
 }
 
 .tutor-course-filter-wrapper > div:first-child label:hover, .tutor-wrap nav.course-enrolled-nav ul li.active a {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .tutor-course-lesson h5 a, .tutor-course-loop-price > .price .tutor-loop-cart-btn-wrap a, .tutor-course-loop-title h2 a, .tutor-single-course-meta ul li span, .tutor-single-course-meta ul li.tutor-social-share button, .tutor-single-course-meta.tutor-lead-meta ul li span, .tutor-wrap nav.course-enrolled-nav ul li a {
@@ -629,11 +629,11 @@ span.eleft {
 }
 
 .team_single_title h1 {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .single_team_list ul li a i, .single_team_list ul li i, .witr_single_team_s {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .single_team_list ul li {
@@ -645,7 +645,7 @@ span.eleft {
 }
 
 .team_single_btn a {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .team_single_btn a:hover {
@@ -681,7 +681,7 @@ span.eleft {
 }
 
 .defaultsearch button {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .defaultsearch button:hover {
@@ -693,11 +693,11 @@ span.eleft {
 }
 
 .tagcloud a:hover {
-    background: #ff8f27
+    background: #369ed1
 }
 
 table#wp-calendar td#today {
-    background: #ff8f27
+    background: #369ed1
 }
 
 pre {
@@ -705,19 +705,19 @@ pre {
 }
 
 .wp-block-button__link {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .post-password-form input[type=submit] {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .mean-container .mean-nav {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .mean-container .mean-bar {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .techite_nav_area {
@@ -737,7 +737,7 @@ pre {
 }
 
 .hbg2 .techite_menu > ul > li.active > a, .hbg2 .techite_menu > ul > li > a:hover, .heading_style_2 .techite_menu > ul > li.active > a, .heading_style_2 .techite_menu > ul > li > a:hover, .heading_style_3 .techite_menu > ul > li.active > a, .heading_style_3 .techite_menu > ul > li > a:hover, .heading_style_4 .techite_menu > ul > li.active > a, .heading_style_4 .techite_menu > ul > li > a:hover, .techite_menu ul .sub-menu li a:hover, .techite_menu ul .sub-menu li.active a, .techite_menu > ul > li.active > a, .techite_menu > ul > li > a:hover, .techite_nav_area.prefix .techite_menu > ul > li.active > a, .techite_nav_area.prefix .techite_menu > ul > li > a:hover {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .witr_shop_sc a.cart-contents {
@@ -757,7 +757,7 @@ pre {
 }
 
 a.dtbtn {
-    background: #ff8f27
+    background: #369ed1
 }
 
 a.dtbtn:hover {
@@ -765,7 +765,7 @@ a.dtbtn:hover {
 }
 
 .em-quearys-menu i {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .em-s-open {
@@ -773,11 +773,11 @@ a.dtbtn:hover {
 }
 
 .btn {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .btn.btn-bordered:hover {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .btn:active {
@@ -801,7 +801,7 @@ a.dtbtn:hover {
 }
 
 .readmore a:hover {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .techite-single-blog-details {
@@ -809,11 +809,11 @@ a.dtbtn:hover {
 }
 
 .techite-single-icon a:hover, .techite-single-icon-inner a:hover {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .page-numbers span.current, .paginations a.current, .paginations a:hover {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .page-numbers, .tutor-pagination-wrap a, .tutor-pagination-wrap span.page-numbers.current, a.page-numbers {
@@ -821,11 +821,11 @@ a.dtbtn:hover {
 }
 
 .tutor-pagination-wrap a:hover, .tutor-pagination-wrap span.page-numbers.current {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .commment_title h3:before {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .comment-respond, .comments {
@@ -833,7 +833,7 @@ a.dtbtn:hover {
 }
 
 .comment_techite_btn {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .comment_techite_btn:hover {
@@ -857,7 +857,7 @@ a.dtbtn:hover {
 }
 
 .footer-social-icon a i {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .footer-social-icon a i:hover {
@@ -885,7 +885,7 @@ a.dtbtn:hover {
 }
 
 .footer-middle .mc4wp-form-fields button {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .footer-middle .mc4wp-form-fields button:hover {
@@ -905,27 +905,27 @@ a.dtbtn:hover {
 }
 
 .techite-description-area .social-icons a:hover {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .witr_shortcode_inner {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .witr_amar_table table th {
-    background: #ff8f2730
+    background: #369ed130
 }
 
 .tutor-course-loop-level {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .txw span.tutor-text-avatar {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .tutor-course-archive-results-wrap strong {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .techite_button a:hover, .witr_btn:hover, a.dtbtn:hover {
@@ -933,15 +933,15 @@ a.dtbtn:hover {
 }
 
 #scrollUp {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .techite-header-top {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .top-right-menu ul .sub-menu {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .em_creative_header {
@@ -949,7 +949,7 @@ a.dtbtn:hover {
 }
 
 .creative_header_button .dtbtn, .creative_header_button:before, .creative_header_button > a:hover, .em_creative_header:after, .em_creative_header:before {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .tx_menuc_btn .tx_mc_btn {
@@ -969,17 +969,17 @@ a.dtbtn:hover {
 }
 
 .top_crmenu_l ul, .top_crt_style {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .em_slider_social a {
-    background: #ff8f27;
-    border: 1px solid #ff8f27
+    background: #369ed1;
+    border: 1px solid #369ed1
 }
 
 .em_slider_social a:hover {
-    background: #ff8f27;
-    border-color: #ff8f27;
+    background: #369ed1;
+    border-color: #369ed1;
     color: #fff
 }
 
@@ -1008,7 +1008,7 @@ a.dtbtn:hover {
 }
 
 .tbd_item_info a:hover, .tbd_product_title h2 a:hover {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .woocommerce .products .star-rating, .woocommerce .star-rating {
@@ -1020,7 +1020,7 @@ a.dtbtn:hover {
 }
 
 .woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce-info::before {
-    color: #ff8f27
+    color: #369ed1
 }
 
 ul.tx_product_tab.nav li a {
@@ -1036,7 +1036,7 @@ ul.tx_product_tab.nav li a.active {
 }
 
 .woocommerce div.product .stock {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
@@ -1048,7 +1048,7 @@ ul.tx_product_tab.nav li a.active {
 }
 
 .woocommerce table.witr_product_cart tbody tr td a.witr_cart_delete {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .woocommerce .witr_cart_to_cross a.checkout-button.alt, .woocommerce .witr_checkout_form button.button.alt, .woocommerce .witr_product_cart button, .woocommerce .witr_product_cart button.button:disabled, .woocommerce .witr_product_cart button.button:disabled[disabled], .woocommerce a.button, .woocommerce a.button.wc-backward, .woocommerce button.button, .woocommerce input.button {
@@ -1060,7 +1060,7 @@ ul.tx_product_tab.nav li a.active {
 }
 
 .woocommerce-message::before {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .witr_cart_to_cross .cart_totals > h2 {
@@ -1080,7 +1080,7 @@ nav.woocommerce-MyAccount-navigation ul li.is-active a {
 }
 
 .woocommerce-MyAccount-content a {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .woocommerce-column__title {
@@ -1092,15 +1092,15 @@ nav.woocommerce-MyAccount-navigation ul li.is-active a {
 }
 
 .witr_cat_content a {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .tbd_product .thb_product_car a {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .thb_product_car a.added_to_cart:hover:before, .woocommerce div.product .woocommerce-tabs ul.tabs li.active, .woocommerce div.product form.cart .button, .woocommerce span.onsale.onsingle_sale.tbd_sale_inner, .woocommerce span.tbd_sale_inner {
-    background: #ff8f27
+    background: #369ed1
 }
 
 h2.woocommerce-loop-category__title {
@@ -1120,7 +1120,7 @@ mark.count {
 }
 
 .woocommerce .witr_cart_to_cross a.checkout-button.alt, .woocommerce .witr_checkout_form button.button.alt, .woocommerce .witr_product_cart button, .woocommerce .witr_product_cart button.button:disabled, .woocommerce .witr_product_cart button.button:disabled[disabled], .woocommerce a.button, .woocommerce a.button.wc-backward, .woocommerce button.button, .woocommerce input.button {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .woocommerce .witr_cart_to_cross a.checkout-button.alt:hover, .woocommerce .witr_checkout_form button.button.alt:hover .woocommerce a.button:hover, .woocommerce .witr_product_cart button:hover, .woocommerce a.button.wc-backward:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
@@ -1141,20 +1141,20 @@ mark.count {
 }
 
 .tbd_product .thb_product_car a:hover {
-    background-color: #ff8f27;
+    background-color: #369ed1;
     color: #fff
 }
 
 .witr_cart_to_cross .cart_totals > h2 {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .tbd_product_title h2:hover, .tbd_product_title h3:hover {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .witr_checkout_form .witr_ck_blling h3, .witr_checkout_form h3#order_review_heading, h2.woocommerce-order-details__title {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .woocommerce-checkout.witr_checkout_form #payment {
@@ -1166,7 +1166,7 @@ nav.woocommerce-MyAccount-navigation ul li {
 }
 
 nav.woocommerce-MyAccount-navigation ul li.is-active {
-    background: #ff8f27
+    background: #369ed1
 }
 
 nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover {
@@ -1174,7 +1174,7 @@ nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover {
 }
 
 .woocommerce-column__title {
-    background: #ff8f27
+    background: #369ed1
 }
 
 nav.woocommerce-MyAccount-navigation ul li a {
@@ -1182,7 +1182,7 @@ nav.woocommerce-MyAccount-navigation ul li a {
 }
 
 .content-widget .widget_price_filter .ui-slider .ui-slider-handle, .content-widget .widget_price_filter .ui-slider .ui-slider-range, .widget_product_search button {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .techite-single-blog {
@@ -1198,7 +1198,7 @@ nav.woocommerce-MyAccount-navigation ul li a {
 }
 
 .commment_title h3:before, .readmore a:hover, .techite-single-icon a:hover, .techite-single-icon-inner a:hover, .techite_btn {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .comment-respond {
@@ -1210,11 +1210,11 @@ nav.woocommerce-MyAccount-navigation ul li a {
 }
 
 .mini_shop_content a span.count, .slick-next, .slick-next.slick-disabled, .slick-prev, .slick-prev.slick-disabled, .twr_mini_cart .woocommerce.widget_shopping_cart .buttons a.checkout, .twr_mini_cart .woocommerce.widget_shopping_cart .buttons a:hover {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .slick-dots li button {
-    background: #ff8f275c
+    background: #369ed15c
 }
 
 .post_reply div.st a {
@@ -1239,7 +1239,7 @@ hr.mtb-40 {
 }
 
 .blog-left-side h2.widget-title::before {
-    border: 1px solid #ff8f27
+    border: 1px solid #369ed1
 }
 
 .blog-left-side .widget > ul > li:not(:last-child) {
@@ -1275,7 +1275,7 @@ td {
 }
 
 .sticky {
-    border-color: #ff8f27
+    border-color: #369ed1
 }
 
 .top-form-control input {
@@ -1283,7 +1283,7 @@ td {
 }
 
 .tag-sticky-2 .techite-single-blog {
-    border: 1px solid #ff8f27
+    border: 1px solid #369ed1
 }
 
 .readmore a {
@@ -1291,7 +1291,7 @@ td {
 }
 
 .readmore a:hover {
-    border-color: #ff8f27
+    border-color: #369ed1
 }
 
 .techite-single-icon-inner a {
@@ -1299,11 +1299,11 @@ td {
 }
 
 .techite-single-icon-inner a:hover {
-    border-color: #ff8f27
+    border-color: #369ed1
 }
 
 .page-numbers span.current, .paginations a.current, .paginations a:hover {
-    border-color: #ff8f27
+    border-color: #369ed1
 }
 
 .post_comment {
@@ -1331,11 +1331,11 @@ td {
 }
 
 .btn.btn-bordered {
-    border: 2px solid #ff8f27
+    border: 2px solid #369ed1
 }
 
 .techite-description-area .social-icons a:hover {
-    border-color: #ff8f27
+    border-color: #369ed1
 }
 
 .witr_sub_table {
@@ -1351,7 +1351,7 @@ td {
 }
 
 .top-right-menu ul .sub-menu {
-    border-top: 1px solid #ff8f27
+    border-top: 1px solid #369ed1
 }
 
 .top_crmenu_l ul {
@@ -1363,8 +1363,8 @@ ul.tx_product_tab.nav li a {
 }
 
 ul.tx_product_tab.nav li a.active {
-    border-color: #ff8f27;
-    background: #ff8f27
+    border-color: #369ed1;
+    background: #369ed1
 }
 
 .tbd_single_image a.woocommerce-product-gallery__trigger {
@@ -1392,7 +1392,7 @@ ul.tx_product_tab.nav li a.active {
 }
 
 .woocommerce-info, .woocommerce-message {
-    border-top-color: #ff8f27
+    border-top-color: #369ed1
 }
 
 .woocommerce .witr_cart_to_cross table.shop_table tbody tr.order-total td, .woocommerce .witr_cart_to_cross table.shop_table tbody tr.order-total th {
@@ -1404,7 +1404,7 @@ ul.tx_product_tab.nav li a.active {
 }
 
 .woocommerce form .form-row.woocommerce-invalid .select2-container, .woocommerce form .form-row.woocommerce-invalid input.input-text, .woocommerce form .form-row.woocommerce-invalid select {
-    border-color: #ff8f27
+    border-color: #369ed1
 }
 
 nav.woocommerce-MyAccount-navigation ul li {
@@ -1413,7 +1413,7 @@ nav.woocommerce-MyAccount-navigation ul li {
 
 nav.woocommerce-MyAccount-navigation ul li.is-active:after {
     border-top: 20px solid transparent;
-    border-left: 14px solid #ff8f27;
+    border-left: 14px solid #369ed1;
     border-bottom: 20px solid transparent
 }
 
@@ -1432,7 +1432,7 @@ nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after {
 }
 
 .tag-sticky-2 .techite-single-blog {
-    border: 1px solid #ff8f27
+    border: 1px solid #369ed1
 }
 
 .readmore a {
@@ -1440,7 +1440,7 @@ nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after {
 }
 
 .readmore a:hover {
-    border-color: #ff8f27
+    border-color: #369ed1
 }
 
 .techite-single-icon-inner a {
@@ -1448,7 +1448,7 @@ nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after {
 }
 
 .techite-single-icon-inner a:hover {
-    border-color: #ff8f27
+    border-color: #369ed1
 }
 
 .post_comment {
@@ -1480,24 +1480,24 @@ nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after {
 }
 
 a#cancel-comment-reply-link {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .slick-dots li.slick-active button {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .twr_pretwr_loader_pre .twr_animation .twr_circle_pre {
-    border-top-color: #ff8f27;
-    border-bottom-color: #ff8f27
+    border-top-color: #369ed1;
+    border-bottom-color: #369ed1
 }
 
 .twr_pretwr_loader_pre .twr_animation .twr_text_pre .twr_textletter_pre:before {
-    color: #ff8f27
+    color: #369ed1
 }
 
 .tx_golobal_color {
-    background: #ff8f27
+    background: #369ed1
 }
 
 .tx_btn_global_color:hover {

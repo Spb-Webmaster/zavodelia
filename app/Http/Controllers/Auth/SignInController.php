@@ -14,6 +14,7 @@ class SignInController extends Controller
     public function page()
     {
 
+        return redirect()->route('home'); /** Это нужно убрать!!!! */
         return view('auth.login');
     }
 
@@ -32,7 +33,6 @@ class SignInController extends Controller
 
       //  flash()->info('test');
         $request->session()->regenerate();
-        return redirect()->route('cabinet'); // intended - назад или route
     }
 
 
