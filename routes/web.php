@@ -36,9 +36,13 @@ Route::controller(HomeController::class)->group(function () {
 
 Route::controller(SignInController::class)->group(function () {
 
-    Route::get('/login', 'page')
+    Route::get('/', 'page')
         ->middleware(RedirectIfAuthenticated::class)
     ->name('login');
+
+/*    Route::get('/login', 'page')
+        ->middleware(RedirectIfAuthenticated::class)
+    ->name('login');*/
 
     Route::post('/login', 'handle')
         ->name('login.handle');
