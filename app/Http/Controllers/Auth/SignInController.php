@@ -13,7 +13,7 @@ class SignInController extends Controller
 
     public function page()
     {
-
+//---
         return view('auth.login');
     }
 
