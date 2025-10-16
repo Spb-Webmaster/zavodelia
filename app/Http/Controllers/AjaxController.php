@@ -63,7 +63,7 @@ class AjaxController
     {
 
         $validator = Validator::make($request->all(), [
-            'upload_f' => 'required|image|max:8096'
+            'upload_f' => 'required|mimes:png,jpg,jpeg,csv,txt,pdf, webp|max:6096'
         ]);
 
         if ($validator->fails()) {
@@ -112,7 +112,7 @@ class AjaxController
 
 
         /**
-         * возвращаем назад в браузер
+         * Возвращаем назад в браузер
          */
 
         return response()->json([

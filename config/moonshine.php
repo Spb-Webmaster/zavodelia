@@ -62,7 +62,7 @@ return [
     ],
 
     // Storage
-    'disk' => 'public',
+    'disk' => 'moonshine',
     'disk_options' => [],
     'cache' => 'file',
 

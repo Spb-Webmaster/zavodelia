@@ -28,9 +28,12 @@
                                                     <div class="swiper-wrapper" id="swiper-wrapper-c3792610c91bd008b"
                                                          aria-live="off"
                                                          style="transition-duration: 0ms; transform: translate3d(-3870px, 0px, 0px);">
-                                                        <div class="swiper-slide d1 t1 m1 witr_swiper_height swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev"
-                                                             style="background-image: url(/images/slider.jpg); width: 1905px; margin-right: 30px;"
-                                                             data-swiper-slide-index="0" role="group" aria-label="1 / 3">
+
+
+
+                                                        <div class="swiper-slide d1 t1 m1 witr_swiper_height swiper-slide-duplicate-active swiper-slide-prev swiper-slide-duplicate-next"
+                                                             style="background-image: url(/images/slider_1.jpg); width: 1905px; margin-right: 30px;"
+                                                             data-swiper-slide-index="0" role="group" aria-label="2 / 3">
                                                             <!-- witr_show_animate -->
 
 
@@ -38,7 +41,9 @@
                                                                 <div class="witr_swiper_content ">
 
                                                                     <!-- title -->
-                                                                    <h1><a href="#">О предприятии</a></h1>
+                                                                    <!-- title 2 -->
+                                                                    <h1><a href="/company/o-predpriyatii">О предприятии</a></h1>
+
                                                                     <!-- title 2 -->
                                                                     <h2>Акционерное общество</h2>
                                                                     <!-- title 3 -->
@@ -60,17 +65,21 @@
                                                                     <!-- social -->
                                                                     <!-- social -->
 
+
                                                                 </div>
 
                                                                 <!-- slider thumb image -->
+
+
                                                                 <!-- video icon -->
+
 
                                                             </div>
 
                                                         </div>
 
                                                         <div class="swiper-slide d1 t1 m1 witr_swiper_height swiper-slide-duplicate-active swiper-slide-prev swiper-slide-duplicate-next"
-                                                             style="background-image: url(/images/slider.jpg); width: 1905px; margin-right: 30px;"
+                                                             style="background-image: url(/images/slider_2.jpg); width: 1905px; margin-right: 30px;"
                                                              data-swiper-slide-index="0" role="group" aria-label="2 / 3">
                                                             <!-- witr_show_animate -->
 
@@ -83,8 +92,7 @@
                                                                     <h1><a href="/company/o-predpriyatii">О предприятии</a></h1>
 
                                                                     <!-- title 2 -->
-                                                                    <h2>Акционерное общество
-                                                                    </h2>
+                                                                    <h2>Акционерное общество</h2>
                                                                     <!-- title 3 -->
                                                                     <h3>«Завод Элия»</h3>
                                                                     <!-- content -->
@@ -118,57 +126,8 @@
                                                         </div>
 
 
-                                                        <div class="swiper-slide d1 t1 m1 witr_swiper_height swiper-slide-duplicate swiper-slide-active swiper-slide-duplicate-prev"
-                                                             style="background-image: url(images/slider.jpg); width: 1905px; margin-right: 30px;"
-                                                             data-swiper-slide-index="0" role="group" aria-label="3 / 3">
-                                                            <!-- witr_show_animate -->
 
 
-                                                            <div class="witr_sw_text_area text-center">
-                                                                <div class="witr_swiper_content ">
-
-
-                                                                    <h1>ROBOT TECHNOLOGY </h1>
-                                                                    <!-- title 2 -->
-                                                                    <h2>Акционерное общество
-                                                                    </h2>
-                                                                    <!-- title 3 -->
-                                                                    <h3>«Завод Элия»</h3>
-                                                                    <!-- content -->
-
-                                                                    <!-- inner title -->
-
-
-                                                                    <!-- btn gradient style -->
-                                                                    <div class="slider_btn">
-                                                                        <div class="witr_btn_style">
-                                                                            <div class="witr_btn_sinner">
-                                                                                <!-- button -->
-                                                                                <a class="witr_btn" href="#">OUR SERVICE
-                                                                                    NOW</a>
-
-                                                                                <!-- video button 2 -->
-
-                                                                                <!-- Circle video button Style -->
-
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- social -->
-                                                                    <!-- social -->
-
-
-                                                                </div>
-
-                                                                <!-- slider thumb image -->
-
-
-                                                                <!-- video icon -->
-
-
-                                                            </div>
-
-                                                        </div>
                                                     </div>
                                                     <!-- Add Pagination -->
                                                     <div class="swiper-scrollbar"></div>

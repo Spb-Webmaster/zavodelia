@@ -641,8 +641,8 @@ $maxWidth: 1440;
     }
 
     .h1, h1, h2, h3 {
-    /*    @include family_Philosopher;*/
-  /*      font-weight: 700;*/
+        /*    @include family_Philosopher;*/
+        /*      font-weight: 700;*/
         font-size: 58px;
         line-height: 1.1em;
         padding: 10px 0 10px 0;
@@ -984,14 +984,66 @@ $maxWidth: 1440;
 }
 
 
+@media (max-width: 1200px) {
+    .menu-item {
+        &.active > a {
+                color: #369ed1 !important;
+            }
+
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .cabinet__flex {
+
+        flex-direction: column-reverse;
+
+        .cabinet__left {
+            width: 100%;
+            padding: 16px 0;
+        }
+
+        .cabinet__right {
+            width: 100%;
+            padding: 16px 0;
+        }
+
+    }
+}
+
 @media screen and (max-width: 742px) {
 
     .cabinet__right {
         .hbox__submenu.top {
-              display: none;
+            display: none;
         }
     }
+
+    .c__flex {
+        display: block;
+
+        .c__flex_50 {
+            width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+    }
+    .slotButtons {
+        .w_30 {
+            width: 100%;
+        }
+    }
+
+    .F_form {
+
+        min-width: 100px !important;
+        width: 96%;
+    }
+
 }
+
 @media screen and (max-width: 468px) {
 
     .cabinet_radius12_fff {

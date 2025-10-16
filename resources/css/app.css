@@ -35,4 +35,5 @@
 @import "./forms/form_modal/qr_modal.scss";
 @import "./forms/order_mini.scss";
 @import "./forms/loader.css";
+@import "./gallery/gallery.scss";
 @import "./style.scss";
