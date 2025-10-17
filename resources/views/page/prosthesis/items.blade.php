@@ -1,8 +1,8 @@
 @extends('layouts.layout')
 <x-seo.meta
-    title="{{ (config2('moonshine.product.metatitle'))?: config2('moonshine.product.title') }}"
-    description="{{ config2('moonshine.product.description')  }}"
-    keywords="{{ config2('moonshine.product.keywords')  }}"
+    title="{{ (config2('moonshine.prosthesis.metatitle'))?: config2('moonshine.prosthesis.title') }}"
+    description="{{ config2('moonshine.prosthesis.description')  }}"
+    keywords="{{ config2('moonshine.prosthesis.keywords')  }}"
 />
 @section('content')
     <div class="robotil-counter-bg breadcumb-area">
@@ -10,13 +10,13 @@
             <div class="row">
                 <div class="col-md-12 txtc  text-center">
                     <div class="brpt brptsize">
-                        <h1>{{ config2('moonshine.product.title') }}</h1>
+                        <h1>{{ config2('moonshine.prosthesis.title') }}</h1>
                     </div>
                     <div class="breadcumb-inner">
                         <ul>Вы здесь!<i class="icofont-thin-right"></i>
                             <li><a href="{{route('home')}}">Главная</a></li>
                             <i class="icofont-thin-right"></i><span
-                                class="current">{{ config2('moonshine.product.title') }}</span></ul>
+                                class="current">{{ config2('moonshine.prosthesis.title') }}</span></ul>
                         <!-- .breadcrumbs -->
                     </div>
                 </div>
@@ -38,12 +38,12 @@
                             <div class="witr_section_title">
 
                                 <div class="witr_section_title_inner text-center pad_b24">
-                                    <h1>{{ config2('moonshine.product.title') }}</h1>
-                                    {!!  (config2('moonshine.product.subtitle'))?'<h2>' . config2('moonshine.product.subtitle')  . '</h2>' : ''  !!}
+                                    <h1>{{ config2('moonshine.prosthesis.title') }}</h1>
+                                    {!!  (config2('moonshine.prosthesis.subtitle'))?'<h2>' . config2('moonshine.prosthesis.subtitle')  . '</h2>' : ''  !!}
 
                                 </div>
                                 <div class="desc pad_b22">
-                                    {!!  config2('moonshine.product.desc') !!}
+                                    {!!  config2('moonshine.prosthesis.desc') !!}
                                 </div>
 
                             </div>
@@ -110,7 +110,7 @@
                     </div>
 
                     <div class="desc pad_b10 pad_t10">
-                        {!!  config2('moonshine.product.desc2') !!}
+                        {!!  config2('moonshine.prosthesis.desc2') !!}
                     </div>
                 </div>
             </div>

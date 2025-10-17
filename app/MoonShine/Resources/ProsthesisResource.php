@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\MoonShine\Resources;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Training;
+use App\Models\Prosthesis;
 
 use MoonShine\Laravel\Enums\Action;
 use MoonShine\Laravel\Fields\Slug;
@@ -30,12 +30,14 @@ use MoonShine\UI\Fields\Switcher;
 use MoonShine\UI\Fields\Text;
 
 /**
- * @extends ModelResource<Training>
+ * @extends ModelResource<Prosthesis>
  */
-class TrainingResource extends ModelResource
+class ProsthesisResource extends ModelResource
 {
-    protected string $model = Training::class;
-    protected string $title = 'Обучение';
+    protected string $model = Prosthesis::class;
+
+
+    protected string $title = 'Протезы';
 
     protected string $column = 'sorting';
 
@@ -101,6 +103,34 @@ class TrainingResource extends ModelResource
                     ])->columnSpan(6),
 
 
+                ]),
+
+                Grid::make([
+                    Column::make([
+
+                        Collapse::make('Анонс', [
+
+                            Image::make(__('Анонс'), 'img')
+                                ->dir('images')
+                                ->allowedExtensions(['jpg', 'png', 'jpeg', 'gif', 'svg'])
+                                ->removable()
+                                ->hint('Изображение в анонс'),
+
+                        ]),
+
+
+                    ])->columnSpan(6),
+                    Column::make([
+
+                        Collapse::make('Краткое описание', [
+
+                            TinyMce::make('Описание', 'short_desc'),
+
+
+                        ]),
+
+
+                    ])->columnSpan(6),
                 ]),
 
 

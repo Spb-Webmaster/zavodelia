@@ -30,6 +30,9 @@ class ProductController extends Controller
         $items = ProductViewModel::make()->products();
         $item = ProductViewModel::make()->product($slug);
 
+        if(!$item) {
+            abort(404);
+        }
 
         return view('page.product.item', [
             'items' => $items,

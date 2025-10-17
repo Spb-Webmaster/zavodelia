@@ -11,6 +11,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Product\ProductController;
+use App\Http\Controllers\Prosthesis\ProsthesisController;
 use App\Http\Controllers\Responce\ResponceController;
 use App\Http\Controllers\Training\TrainingController;
 use App\Http\Middleware\RedirectIfAuthenticated;
@@ -18,6 +19,7 @@ use App\Http\Middleware\UserBlockedMiddleware;
 use App\Http\Middleware\UserPublishedMiddleware;
 use App\MoonShine\Controllers\MoonshineContact;
 use App\MoonShine\Controllers\MoonshineProduct;
+use App\MoonShine\Controllers\MoonshineProsthesis;
 use App\MoonShine\Controllers\MoonshineSetting;
 use Illuminate\Support\Facades\Route;
 use Spatie\Honeypot\ProtectAgainstSpam;
@@ -215,14 +217,32 @@ Route::controller(TrainingController::class)->group(function () {
 
 Route::controller(ProductController::class)->group(function () {
 
-    Route::get('/product', 'products')
+    Route::get('/products', 'products')
         ->name('products');
-    Route::get('/product/{slug}', 'product')
+    Route::get('/products/{slug}', 'product')
         ->name('product');
 });
 
+
 /**
  * продукция
+ */
+
+/**
+ * протезы
+ */
+
+Route::controller(ProsthesisController::class)->group(function () {
+
+    Route::get('/prosthetics', 'prosthetics')
+        ->name('prosthetics');
+    Route::get('/prosthetics/{slug}', 'prosthesis')
+        ->name('prosthesis');
+});
+
+
+/**
+ * протезы
  */
 
 
@@ -240,6 +260,11 @@ Route::controller(MoonshineContact::class)->group(function () {
 });
 Route::controller(MoonshineProduct::class)->group(function () {
     Route::post('/moonshine/product', 'product');
+
+});
+
+Route::controller(MoonshineProsthesis::class)->group(function () {
+    Route::post('/moonshine/prosthesis', 'prosthesis');
 
 });
 /*Route::controller(MoonshineIndex::class)->group(function () {

@@ -7,6 +7,7 @@ namespace App\MoonShine\Layouts;
 
 use App\MoonShine\Pages\ContactPage;
 use App\MoonShine\Pages\ProductPage;
+use App\MoonShine\Pages\ProsthesisPage;
 use App\MoonShine\Pages\SettingPage;
 use App\MoonShine\Resources\MoonShineUserResource;
 use App\MoonShine\Resources\MoonShineUserRoleResource;
@@ -48,6 +49,7 @@ use App\MoonShine\Resources\TrainingResource;
 use App\MoonShine\Resources\ProductResource;
 use App\MoonShine\Resources\UserResource;
 use App\MoonShine\Resources\ResponceResource;
+use App\MoonShine\Resources\ProsthesisResource;
 
 final class AxeldLayout extends AppLayout
 {
@@ -73,8 +75,14 @@ final class AxeldLayout extends AppLayout
                     MenuItem::make('Завод Элия', CompanyResource::class, 'document-duplicate'),
                 ]),
                 MenuGroup::make('Продукция', [
-                    MenuItem::make('Категория Продукции', ProductPage::class),
+                    MenuItem::make('Категория продукции', ProductPage::class),
                     MenuItem::make('Материалы продукции', ProductResource::class, 'document-duplicate'),
+
+                ]),
+                MenuGroup::make('Протезы', [
+                    MenuItem::make('Категория протезы', ProsthesisPage::class),
+                    MenuItem::make('Материалы протезов', ProductResource::class, 'document-duplicate'),
+
                 ]),
                 MenuGroup::make('Отзывы', [
                     MenuItem::make('Отзывы', ResponceResource::class, 'chat-bubble-oval-left-ellipsis'),
@@ -89,6 +97,7 @@ final class AxeldLayout extends AppLayout
             ]),
 
 
+            MenuItem::make('Prosthesis', ProsthesisResource::class),
         ];
     }
 

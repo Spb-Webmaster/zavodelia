@@ -24,6 +24,9 @@
             <li class="menu-item {{ active_linkMenu(asset(route('products')), 'find')  }} ">
                 <a href="{{route('products')}}">{{ config2('moonshine.product.title') }}</a>
             </li>
+            <li class="menu-item {{ active_linkMenu(asset(route('prosthetics')), 'find')  }} ">
+                <a href="{{route('prosthetics')}}">{{ config2('moonshine.prosthesis.title') }}</a>
+            </li>
 
     </ul>
 </li>

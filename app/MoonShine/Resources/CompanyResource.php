@@ -86,7 +86,7 @@ class CompanyResource extends ModelResource
 
                     ])->columnSpan(6),
                     Column::make([
-                        Collapse::make('Методанные', [
+                        Collapse::make('Метаданные', [
 
                             Text::make('Мета тэг (title) ', 'metatitle')->unescape(),
                             Text::make('Мета тэг (description) ', 'description')->unescape(),

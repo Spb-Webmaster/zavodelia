@@ -16,13 +16,10 @@ use MoonShine\UI\Components\Layout\Divider;
 use MoonShine\UI\Components\Layout\Grid;
 use MoonShine\UI\Components\Tabs;
 use MoonShine\UI\Components\Tabs\Tab;
-use MoonShine\UI\Fields\Json;
-use MoonShine\UI\Fields\Number;
-use MoonShine\UI\Fields\Switcher;
 use MoonShine\UI\Fields\Text;
 
 
-class ProductPage extends Page
+class ProsthesisPage extends Page
 {
 
     public function getBreadcrumbs(): array
@@ -35,8 +32,8 @@ class ProductPage extends Page
     public function setting()
     {
 
-        if (Storage::disk('config')->exists('moonshine/product.php')) {
-            $result = include(storage_path('app/public/config/moonshine/product.php'));
+        if (Storage::disk('config')->exists('moonshine/prosthesis.php')) {
+            $result = include(storage_path('app/public/config/moonshine/prosthesis.php'));
         } else {
             $result = null;
         }
@@ -60,7 +57,7 @@ class ProductPage extends Page
         }
 
         return [
-            FormBuilder::make('/moonshine/product', FormMethod::POST)
+            FormBuilder::make('/moonshine/prosthesis', FormMethod::POST)
                 ->fields([
 
                     Tabs::make([
@@ -98,6 +95,7 @@ class ProductPage extends Page
                                         Text::make('Мета тэг (title) ', 'metatitle')->unescape()->default((isset($metatitle)) ? $metatitle : ''),
                                         Text::make('Мета тэг (description) ', 'description')->unescape()->default((isset($description)) ? $description : ''),
                                         Text::make('Мета тэг (keywords) ', 'keywords')->unescape()->default((isset($keywords)) ? $keywords : ''),
+
                                     ]),
 
                                 ])->columnSpan(6),

@@ -20,6 +20,8 @@ use App\MoonShine\Resources\ProductResource;
 use App\MoonShine\Pages\ProductPage;
 use App\MoonShine\Resources\UserResource;
 use App\MoonShine\Resources\ResponceResource;
+use App\MoonShine\Pages\ProsthesisPage;
+use App\MoonShine\Resources\ProsthesisResource;
 
 class MoonShineServiceProvider extends ServiceProvider
 {
@@ -42,12 +44,14 @@ class MoonShineServiceProvider extends ServiceProvider
                 ProductResource::class,
                 UserResource::class,
                 ResponceResource::class,
+                ProsthesisResource::class,
             ])
             ->pages([
                 ...$config->getPages(),
                 SettingPage::class,
                 ContactPage::class,
                 ProductPage::class,
+                ProsthesisPage::class,
             ])
         ;
     }

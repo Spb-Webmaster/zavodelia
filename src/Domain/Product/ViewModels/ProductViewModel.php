@@ -21,12 +21,11 @@ class ProductViewModel
     public function product($slug):model|null
 
     {
-      $product =   Product::query()
+      return Product::query()
           ->where('slug', $slug)
           ->where('published', 1)
           ->first();
 
-      return $product;
     }
 
 }
