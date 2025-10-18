@@ -265,6 +265,7 @@ line-height: 1.2em;
 .securityAuth__left {
     position: relative;
     padding-right: 9px;
+    min-width: 30px;
 }
 .color_grey {
     color: $colorGrey;

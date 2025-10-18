@@ -157,6 +157,8 @@ Route::controller(AjaxController::class)->group(function () {
     Route::post('/responce-mail/responce-send', 'responce_send')
         ->middleware(UserPublishedMiddleware::class);
 
+    Route::post('/send-mail/order-call', 'order_call');
+
 
 
 });

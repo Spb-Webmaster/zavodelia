@@ -688,7 +688,8 @@
 
     .witr_btn {
         margin-top: 11px !important;
-        margin-bottom: 15px
+        margin-bottom: 15px;
+        line-height: 1.3em;
     }
 
     .elementor-tab-title {

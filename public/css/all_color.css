@@ -1173,7 +1173,8 @@ a.em-active-button:hover {
 }
 
 .witr_btn {
-    background: #369ed1
+    background: #369ed1;
+    line-height: 1.3em;
 }
 
 .witr_btn:hover {

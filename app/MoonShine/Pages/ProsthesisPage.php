@@ -44,12 +44,10 @@ class ProsthesisPage extends Page
 
     public function getTitle(): string
     {
-        return $this->title ?: 'Продукция';
+        return $this->title ?: 'Протезы';
     }
 
-    /**
-     * @return list<ComponentContract>
-     */
+
     protected function components(): iterable
     {
         if(!is_null($this->setting())) {

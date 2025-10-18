@@ -1,0 +1,80 @@
+<div class="order_order-call">
+    <a href="#call_me" data-fancybox class="icon_order_call"></a>
+</div>
+
+<div class="F_form  F_form_order_mini" style="display: none" id="call_me">
+    @honeypot
+    <x-forms.loader class="br_12"/>
+    @include('include.modals.modal.response.response')
+    <div class="F_form__body new__temp">
+        <div class="new__temp_top">
+
+
+
+            <div class="F_form__flex">
+                <div class="c__title_subtitle">
+                    <h3 class="F_h1">Перезвонить</h3>
+                    <div class="F_h2 pad_t5"><span>Оставьте заявку и мы Вам перезвоним</span></div>
+                </div>
+            </div>
+
+
+        </div><!--.new__temp_top-->
+
+
+        <div class="new__temp_middle">
+            <div class="alax_inputs">
+                <div class="text_input">
+                    <x-forms.text-input_fromLabel
+                        type="text"
+                        name="name"
+                        placeholder="Имя"
+                        value="{{ old('name')?:'' }}"
+                        required="true"
+                        class="name"
+                    />
+                    <x-forms.error class="error_name"/>
+
+
+                </div>
+
+                <div class="text_input">
+                    <x-forms.text-input_fromLabel
+                        type="text"
+                        name="phone"
+                        placeholder="Телефон"
+                        value="{{ old('phone')?:'' }}"
+                        required="true"
+                        class="phone"
+                    />
+                    <x-forms.error class="error_phone"/>
+
+                </div>
+
+
+                <div class="text_input pad_t26_important">
+
+                    <x-forms.button_call_me class="button_normal call_me__js">
+                        Отправить
+                    </x-forms.button_call_me>
+                </div>
+            </div><!--.alax_inputs-->
+
+
+        </div><!--.new__temp_middle-->
+    </div><!--.F_form__body-->
+</div><!--.F_form-->
+<div class="F_response">
+    <div class="af-message">
+
+        <p class="ic_done">
+            <img width="85" height="85" loading="lazy" alt="Спасибо" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTEiIGhlaWdodD0iOTIiIHZpZXdCb3g9IjAgMCA5MSA5MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF83MTY1XzE4ODQwKSI+CjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIxX2RfNzE2NV8xODg0MCkiPgo8cGF0aCBkPSJNNDUuNSA4My41QzY2LjIxMDcgODMuNSA4MyA2Ni43MTA3IDgzIDQ2QzgzIDI1LjI4OTMgNjYuMjEwNyA4LjUgNDUuNSA4LjVDMjQuNzg5MyA4LjUgOCAyNS4yODkzIDggNDZDOCA2Ni43MTA3IDI0Ljc4OTMgODMuNSA0NS41IDgzLjVaIiBmaWxsPSIjMkY2RTREIi8+CjwvZz4KPC9nPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTYzLjMzNDYgNDUuNUM2My4zMzQ2IDU1LjYyNSA1NS4xMjYzIDYzLjgzMzMgNDUuMDAxMyA2My44MzMzQzM0Ljg3NjMgNjMuODMzMyAyNi42NjggNTUuNjI1IDI2LjY2OCA0NS41QzI2LjY2OCAzNS4zNzUgMzQuODc2MyAyNy4xNjY2IDQ1LjAwMTMgMjcuMTY2NkM1NS4xMjYzIDI3LjE2NjYgNjMuMzM0NiAzNS4zNzUgNjMuMzM0NiA0NS41WiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTM5LjE2OCA0Ny4xNjY2TDQ0LjE2OCA1MC40OTk5TDUwLjgzNDYgNDAuNDk5OSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPGRlZnM+CjxmaWx0ZXIgaWQ9ImZpbHRlcjBfZF83MTY1XzE4ODQwIiB4PSIwLjE4NzUiIHk9IjAuNjg3NSIgd2lkdGg9IjkwLjYyNSIgaGVpZ2h0PSI5MC42MjUiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KPGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMCIgcmVzdWx0PSJCYWNrZ3JvdW5kSW1hZ2VGaXgiLz4KPGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMTI3IDAiIHJlc3VsdD0iaGFyZEFscGhhIi8+CjxmZU9mZnNldC8+CjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjMuOTA2MjUiLz4KPGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMC4xMjE1NjkgMCAwIDAgMCAwLjEyMTU2OSAwIDAgMCAwIDAuMTMzMzMzIDAgMCAwIDAuMSAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzcxNjVfMTg4NDAiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNzE2NV8xODg0MCIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPGZpbHRlciBpZD0iZmlsdGVyMV9kXzcxNjVfMTg4NDAiIHg9IjIuNTMxMjUiIHk9IjQuNTkzNzUiIHdpZHRoPSI4NS45Mzc1IiBoZWlnaHQ9Ijg1LjkzNzUiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KPGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMCIgcmVzdWx0PSJCYWNrZ3JvdW5kSW1hZ2VGaXgiLz4KPGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMTI3IDAiIHJlc3VsdD0iaGFyZEFscGhhIi8+CjxmZU9mZnNldCBkeT0iMS41NjI1Ii8+CjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjIuNzM0MzgiLz4KPGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMC4xMjE1NjkgMCAwIDAgMCAwLjEyMTU2OSAwIDAgMCAwIDAuMTMzMzMzIDAgMCAwIDAuMDggMCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvd183MTY1XzE4ODQwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93XzcxNjVfMTg4NDAiIHJlc3VsdD0ic2hhcGUiLz4KPC9maWx0ZXI+CjwvZGVmcz4KPC9zdmc+Cg==">
+        </p>
+        <p class="font_26">Спасибо</p>
+        <p class="ccent">Мы получили вашу заявку, наш менеджер свяжется с Вами в ближайшее время.</p>
+
+    </div>
+</div><!--.F_response-->
+
+
+

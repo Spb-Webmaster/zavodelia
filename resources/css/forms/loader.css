@@ -11,12 +11,12 @@
     display: none;
 
 }
-.wrapper_loader.active {
-  background-color: #abdfdf;
+    .wrapper_loader.active {
+        background-color: #000000;
+        display: flex;
+        opacity: 0.6;
+    }
 
-    display: flex;
-
-}
 
 
 .br_12 {

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\CallMeEvent;
 use App\Models\User;
 
 use Domain\Responce\ViewModels\ResponceViewModel;
@@ -16,35 +17,22 @@ class AjaxController
 
 
 
-    public function responce_send(Request $request)
+    public function order_call(Request $request)
     {
 
-
         $validator = Validator::make($request->all(), [
-            'title' => ['required', 'string', 'min:2'],
-            'feedback' => ['required'],
+            'name' => ['required', 'string', 'min:2'],
+            'phone' => ['required'],
         ]);
         if ($validator->passes()) {
-
-            /* dump($request->all());
-             dump(session('feedback_user'));*/
-
-            $result = ResponceViewModel::make()->responce_save($request);
-            /**  */
-
-
 
 
             /**
              * Событие отправка сообщения админу
              */
 
-
-         //  CommentViewModel::make()->store($request);
-            /** сохраним отзыв  **/
-
-        //    FeedbackFormEvent::dispatch($request);
-            /** событие, отправка админу  **/
+            CallMeEvent::dispatch($request);
+            /** событие, отправка админу **/
 
 
             /**
@@ -59,6 +47,32 @@ class AjaxController
         return response()->json(['error' => $validator->errors()]);
 
     }
+    public function responce_send(Request $request)
+    {
+
+
+        $validator = Validator::make($request->all(), [
+            'title' => ['required', 'string', 'min:2'],
+            'feedback' => ['required'],
+        ]);
+        if ($validator->passes()) {
+
+
+            $result = ResponceViewModel::make()->responce_save($request);
+
+            /**
+             * возвращаем назад в браузер
+             */
+
+            return response()->json([
+                'request' => $request
+            ]);
+        }
+
+        return response()->json(['error' => $validator->errors()]);
+
+    }
+
     public function uploadAvatar(Request $request)
     {
 

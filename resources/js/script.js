@@ -1,4 +1,5 @@
 import {
+    call_me,
     responce_send,
     upload_f
 } from './include/ajax';
@@ -31,7 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
     checkbox() // checkbox
         /**  table() // манипуляция с таблицей */
     close_flash() // закрыть окно
-    responce_send() // зотправить отзыв
+    responce_send() // отправить отзыв
+    call_me() // обратный звонок
 
 
 });

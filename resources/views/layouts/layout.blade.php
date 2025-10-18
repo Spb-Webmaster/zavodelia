@@ -485,6 +485,8 @@
 <a id="scrollUp" href="#top" style="display: none; position: fixed; z-index: 2147483647;"><i
         class="icofont-thin-up"></i></a>
 {{--@RegisterServiceWorkerScript --}}<!-- Service worker registration -->
+
+<x-order.order-call />
 </body>
 </html>
 
