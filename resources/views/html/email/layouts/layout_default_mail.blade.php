@@ -349,7 +349,7 @@
                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                     <tr>
                                         <td style="text-align: left; padding-right: 10px;">
-                                            <h3 class="heading">©  {{  now()->year }} {{  env("APP_NAME") }} </h3>
+                                            <h3 class="heading">©  {{  now()->year }} {{  config("app.name") }} </h3>
                                      {{--       <p>{!! config('site.setting.idn') !!}, {!! config('site.setting.country') !!}, <br>{!! config('site.setting.sityAddress') !!}</p>--}}
                                         </td>
                                     </tr>
@@ -362,7 +362,7 @@
             </tr><!-- end: tr -->
             <tr>
                 <td class="bg_white" style="text-align: center; ">
-                    <p style="margin: 4px 0">{{__('Не хотите получать уведомления? Напишите на ')}} {{ env('MAIL_USERNAME') }} </p>
+                    <p style="margin: 4px 0">{{__('Не хотите получать уведомления? Напишите на ')}} {{  config("app.mail_admin") }} </p>
                 </td>
             </tr>
         </table>
