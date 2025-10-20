@@ -24,19 +24,13 @@
             <li class="menu-item {{ active_linkMenu(asset(route('products')), 'find')  }} ">
                 <a href="{{route('products')}}">{{ config2('moonshine.product.title') }}</a>
             </li>
-            <li class="menu-item {{ active_linkMenu(asset(route('prosthetics')), 'find')  }} ">
-                <a href="{{route('prosthetics')}}">{{ config2('moonshine.prosthesis.title') }}</a>
-            </li>
+
 
     </ul>
 </li>
 
-<li class="menu-item">
-    <a href="#">Сообщества</a>
-</li>
-
-<li class="menu-item {{ active_linkMenu(asset(route('responces')), 'find')  }}">
-    <a href="{{route('responces')}}">Отзывы</a>
+<li class="menu-item {{ active_linkMenu(asset(route('prosthetics')), 'find')  }} ">
+    <a href="{{route('prosthetics')}}">{{ config2('moonshine.prosthesis.title') }}</a>
 </li>
 
 <li class="menu-item {{ active_linkMenu(asset(route('trainings')), 'find')  }}  menu-item-has-children">
@@ -48,6 +42,14 @@
                 <a href="{{ ($training->url)? trim($training->url) : route('training', ['slug' => $training->slug ]) }}">{{ $training->title }}</a>
             </li>
         @endforeach
+            <li class="menu-item">
+                <a href="#">Сообщества</a>
+            </li>
+
+            <li class="menu-item {{ active_linkMenu(asset(route('responces')), 'find')  }}">
+                <a href="{{route('responces')}}">Отзывы</a>
+            </li>
+
 
     </ul>
 </li>

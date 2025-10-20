@@ -880,7 +880,7 @@ figcaption.blocks-gallery-caption {
 }
 
 .techite_menu ul li:last-child a {
-    margin-right: 0
+    /*margin-right: 0*/
 }
 
 .techite_menu > ul > li.current > a, .techite_menu > ul > li.current > a:before, .techite_menu > ul > li:hover > a, .techite_menu > ul > li:hover > a:before {
