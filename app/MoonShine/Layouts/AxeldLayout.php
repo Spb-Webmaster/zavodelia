@@ -81,7 +81,7 @@ final class AxeldLayout extends AppLayout
                 ]),
                 MenuGroup::make('Протезы', [
                     MenuItem::make('Категория протезы', ProsthesisPage::class),
-                    MenuItem::make('Материалы протезов', ProductResource::class, 'document-duplicate'),
+                    MenuItem::make('Материалы протезов', ProsthesisResource::class, 'document-duplicate'),
 
                 ]),
                 MenuGroup::make('Отзывы', [

@@ -29,8 +29,19 @@
     </ul>
 </li>
 
-<li class="menu-item {{ active_linkMenu(asset(route('prosthetics')), 'find')  }} ">
+<li class="menu-item {{ active_linkMenu(asset(route('prosthetics')), 'find')  }} menu-item-has-children">
     <a href="{{route('prosthetics')}}">{{ config2('moonshine.prosthesis.title') }}</a>
+
+    <ul class="sub-menu">
+
+        @foreach($prosthetics as $prosthesis)
+            <li class="menu-item {{ active_linkMenu(asset(route('prosthesis', ['slug' => $prosthesis->slug ])), 'find')  }} ">
+                <a href="{{ ($prosthesis->url)? trim($prosthesis->url) : route('prosthesis', ['slug' => $prosthesis->slug ]) }}">{{ $prosthesis->title }}</a>
+            </li>
+        @endforeach
+
+    </ul>
+
 </li>
 
 <li class="menu-item {{ active_linkMenu(asset(route('trainings')), 'find')  }}  menu-item-has-children">
