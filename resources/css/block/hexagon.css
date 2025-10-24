@@ -108,6 +108,16 @@
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
+  .hexagon_h3 h3,
+  .hexagon_h4 h3,
+  .ob_video h3 {
+    font-size: 36px !important;
+  }
+  .hexagon_h3 h4,
+  .hexagon_h4 h4,
+  .ob_video h4 {
+    font-size: 26px !important;
+  }
 }
 @media (max-width: 468px) {
   .flex_hexagon .hexagon_wrap:last-child {
