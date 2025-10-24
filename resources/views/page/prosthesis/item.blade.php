@@ -16,7 +16,7 @@
                         <ul>Вы здесь!<i class="icofont-thin-right"></i>
                             <li><a href="{{route('home')}}">Главная</a></li>
                             <i class="icofont-thin-right"></i>
-                            <li><a href="{{route('products')}}">{{ config2('moonshine.product.title') }}</a></li>
+                            <li><a href="{{route('prosthetics')}}">{{ config2('moonshine.prosthesis.title') }}</a></li>
                             <i class="icofont-thin-right"></i><span
                                 class="current">{{ $item->title }}</span></ul>
                         <!-- .breadcrumbs -->

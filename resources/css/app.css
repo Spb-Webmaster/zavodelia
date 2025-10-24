@@ -22,6 +22,7 @@
 @import "./form/loader.css";
 @import "./form/loader_map.css";
 @import "./block/doc.scss";
+@import "./block/hexagon.scss";
 @import "./auth/flash.scss";
 @import "./auth/register.scss";
 @import "./cabinet/calendar.scss";
