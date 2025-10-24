@@ -97,7 +97,6 @@ final class AxeldLayout extends AppLayout
             ]),
 
 
-            MenuItem::make('Prosthesis', ProsthesisResource::class),
         ];
     }
 
