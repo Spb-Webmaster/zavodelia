@@ -304,10 +304,10 @@
                                         @foreach($photos as $photo)
                                             <figure class="gallery-item">
                                                 <div class="gallery-icon landscape">
-                                                    <a href="#"><img
+                                                    <span><img
                                                             width="150" height="150"
-                                                            src="{{ asset(intervention('150x150', $photo['img'], 'company')) }}"
-                                                        ></a>
+                                                            src="{{ asset(intervention('150x150', $photo, 'company')) }}"
+                                                        ></span>
                                                 </div>
                                             </figure>
                                         @endforeach

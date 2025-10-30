@@ -16,8 +16,9 @@ class ProductComposer
     public function compose(View $view): void
     {
         $products = ProductViewModel::make()->products();
-        $photos = CompanyViewModel::make()->photos();
+        $photos = CompanyViewModel::make()->photos('images/zavod/');
         $prosthetics = ProsthesisViewModel::make()->prosthetics();
+
 
         $view->with([
             'products' => $products,
