@@ -29,5 +29,11 @@ class CompanyViewModel
 
       return $company;
     }
+    public function photos():array|null
+    {
+
+
+      return [];
+    }
 
 }

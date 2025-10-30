@@ -7,12 +7,16 @@
 
     ._gallery_item {
         max-width: 350px;
-        height: auto;
+        height:auto;
         padding: 6px;
         background: #fff;
         border-radius: 4px;
         border: 1px solid #1d1f2c;
         margin: 0 42px 34px 0;
+        img {
+            width: 336px;
+            height: 224px;
+        }
 
         &:nth-child(3n) {
             margin-right: 0;

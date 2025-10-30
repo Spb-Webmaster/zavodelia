@@ -268,35 +268,22 @@
                         <div class="col-sm-12 col-md-6  col-lg-2">
                             <div id="nav_menu-2" class="widget widget_nav_menu"><h2 class="widget-title">Продукция</h2>
                                 <div class="menu-useful-links-container">
-                                    <ul id="menu-useful-links" class="menu">
-                                        <li id="menu-item-6636"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Резисторы</a></li>
-                                    </ul>
-                                    <div class="pad_b15">Кованые изделия: </div>
-                                    <ul  class="menu">
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Двери</a></li>
 
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Решетки</a></li>
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Беседки</a></li>
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Скамейки</a></li>
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Качели</a></li>
-                                        <li
-                                            class="menu-item menu-item-type-custom menu-item-object-custom">
-                                            <a href="#">Кованная мебель</a></li>
+                                        @if(isset($prosthetics))
+                                        <ul id="menu-useful-links" class="menu">
+
+                                        @foreach($prosthetics as $prosthesis)
+                                                <li id="menu-item-6636"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                    <a href="{{ route('prosthesis', ['slug' => $prosthesis->slug]) }}">{{ $prosthesis->title }}</a></li>
+                                            @endforeach
+                                        </ul>
+                                        @endif
 
 
-                                    </ul>
+
+                                 {{--   <div class="pad_b15">Протезирование: </div>--}}
+
                                 </div>
                             </div>
                         </div>
@@ -309,17 +296,17 @@
                         </div>
                         <div class="col-sm-12 col-md-6  col-lg-4">
                             <div id="media_gallery-2" class="widget widget_media_gallery">
-                                <h2 class="widget-title">Продукция
+                                <h2 class="widget-title">Предприятие
                                     </h2>
                                 <div id="gallery-1"
                                      class="gallery galleryid-8 gallery-columns-3 gallery-size-thumbnail">
-                                    @if(isset($products))
-                                        @foreach($products as $item)
+                                    @if(isset($photos))
+                                        @foreach($photos as $photo)
                                             <figure class="gallery-item">
                                                 <div class="gallery-icon landscape">
-                                                    <a href="{{ route('product', ['slug' => $item->slug]) }}"><img
+                                                    <a href="#"><img
                                                             width="150" height="150"
-                                                            src="{{ asset(intervention('150x150', $item->img, 'products')) }}"
+                                                            src="{{ asset(intervention('150x150', $photo['img'], 'company')) }}"
                                                         ></a>
                                                 </div>
                                             </figure>

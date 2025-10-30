@@ -12,14 +12,14 @@ class ProductViewModel
 {
     use Makeable;
 
-    public function products():collection {
+    public function products():collection
+    {
       return  Product::query()->where('published', 1)
           ->orderBy('sorting', 'desc')
           ->get();
     }
 
     public function product($slug):model|null
-
     {
       return Product::query()
           ->where('slug', $slug)
