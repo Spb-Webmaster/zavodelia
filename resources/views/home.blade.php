@@ -62,9 +62,8 @@
                                                                     <div class="witr_btn_style">
                                                                         <div class="witr_btn_sinner">
                                                                             <!-- button -->
-                                                                            <a class="witr_btn"
-                                                                               href="/company/sistema-menedzhmenta-kachestva">Сертификаты
-                                                                                соответствия</a>
+                                                                            {{--<a class="witr_btn"
+                                                                               href="/prosthetics/gilzy">Гильзы</a>--}}
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -113,9 +112,8 @@
                                                                     <div class="witr_btn_style">
                                                                         <div class="witr_btn_sinner">
                                                                             <!-- button -->
-                                                                            <a class="witr_btn"
-                                                                               href="/company/sistema-menedzhmenta-kachestva">Сертификаты
-                                                                                соответствия</a>
+                                                                            {{--<a class="witr_btn"
+                                                                               href="/prosthetics/gilzy">Гильзы</a>--}}
                                                                         </div>
                                                                     </div>
                                                                 </div>
