@@ -45,7 +45,7 @@
 </li>
 
 <li class="menu-item {{ active_linkMenu(asset(route('trainings')), 'find')  }}  menu-item-has-children">
-    <a href="#">Обучение</a>
+    <a href="#">Полезное</a>
     <ul class="sub-menu">
 
         @foreach($trainings as $training)
