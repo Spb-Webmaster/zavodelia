@@ -204,6 +204,14 @@ class ProsthesisResource extends ModelResource
                                 ->removable()
                                 ->hint('Растягивается на 100% ширины'),
 
+
+                            Image::make('Галерея', 'gallery')
+                                ->dir('gallery')
+                                ->disk(config('moonshine.disk', 'moonshine'))
+                                ->allowedExtensions(['jpg', 'png', 'jpeg', 'gif', 'svg'])
+                                ->multiple()
+                                ->removable(),
+
                             TinyMce::make('Описание дополнительное', 'desc2'),
 
 

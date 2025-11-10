@@ -36,6 +36,7 @@ class Prosthesis extends Model
         'params' => 'collection',
         'video' => 'collection',
         'docs' => 'collection',
+        'gallery' => 'collection',
     ];
 
     public function getVideoVisibleAttribute()
