@@ -85,7 +85,7 @@
 
                                                     <div
                                                         class="swiper-slide d1 t1 m1 witr_swiper_height swiper-slide-duplicate-active swiper-slide-prev swiper-slide-duplicate-next"
-                                                        style="background-image: url(/images/slider_2.jpg); width: 1905px; margin-right: 30px;"
+                                                        style="background-image: url({{Storage::url('/images/prosthesis_2.jpg')}}); width: 1905px; margin-right: 30px;"
                                                         data-swiper-slide-index="0" role="group" aria-label="2 / 3">
                                                         <!-- witr_show_animate -->
 
