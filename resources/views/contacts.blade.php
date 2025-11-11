@@ -38,7 +38,7 @@
                             <div class="single_image_area">
                                 <div class="single_image single_line_option  ">
                                     <!-- image -->
-                                    <img loading="lazy" decoding="async" width="513" height="598" src="images/about.jpg"
+                                    <img loading="lazy" decoding="async" width="513" height="598" src="{{ Storage::url('images/about2.jpg') }}"
                                          class="attachment-large size-large wp-image-6888"
                                          alt="{{ config2('moonshine.setting.contact_mimi_name_company') }}"
                                          sizes="(max-width: 513px) 100vw, 513px">
