@@ -29,6 +29,7 @@ class Prosthesis extends Model
         'metatitle',
         'description',
         'keywords',
+        'big_gallery'
     ];
 
 
@@ -37,6 +38,7 @@ class Prosthesis extends Model
         'video' => 'collection',
         'docs' => 'collection',
         'gallery' => 'collection',
+        'big_gallery' => 'collection',
     ];
 
     public function getVideoVisibleAttribute()
