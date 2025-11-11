@@ -27,8 +27,7 @@
 }
 
 .big_gallery {
-    padding-left: 15px;
-    padding-right: 15px;
+
 
     .big_gallery__title {
 
@@ -80,6 +79,10 @@
         align-items: start;
         flex-wrap: wrap;
 
+    }
+    .big_gallery {
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .big_gallery__title {
         text-align: center;
