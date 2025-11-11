@@ -1,6 +1,6 @@
 .gallery_items {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
   flex-wrap: wrap;
 }
@@ -19,6 +19,10 @@
 }
 .gallery_items ._gallery_item:nth-child(3n) {
   margin-right: 0;
+}
+
+.big_gallery .big_gallery__title {
+  padding: 6px 0 20px 0;
 }
 
 /*# sourceMappingURL=gallery.css.map */

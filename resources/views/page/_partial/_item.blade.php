@@ -144,7 +144,7 @@
         </div>
     @endif
 
-    @if($item->gallery)
+    @if(isset($item->gallery))
         <div class="elementor-container elementor-column-gap-default pad_t20 pad_b20">
             <div class="gallery_items">
                 @foreach($item->gallery as $it)
@@ -157,6 +157,29 @@
                 @endforeach
 
             </div>
+        </div>
+    @endif
+
+    @if($item->big_gallery)
+        <div class="big_gallery">
+        @foreach($item->big_gallery as $big_gallery)
+        <div class="pad_t20 pad_b20">
+            <h2 class="big_gallery__title">{{ $big_gallery['json_title'] }}</h2>
+            <div class="gallery_items">
+                @foreach($big_gallery['json_gallery'] as $it)
+                    <div class="_gallery_item">
+
+                        <a href="{{ Storage::url($it) }}" data-fancybox="img">
+                            <img src="{{ Storage::url($it) }}" alt="" width="350" loading="lazy" />
+                        </a>
+                    </div>
+                @endforeach
+
+            </div>
+            <div class="big_gallery__desc desc">{!!  $big_gallery['json_desc'] !!}</div>
+
+        </div>
+        @endforeach
         </div>
     @endif
 

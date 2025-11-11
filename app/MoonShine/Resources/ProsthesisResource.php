@@ -170,8 +170,6 @@ class ProsthesisResource extends ModelResource
                                     ]),
 
 
-
-
                                 ])->columnSpan(6),
 
 
@@ -214,12 +212,24 @@ class ProsthesisResource extends ModelResource
 
                             TinyMce::make('Описание дополнительное', 'desc2'),
 
+                            Json::make('', 'big_gallery')->fields([
+
+                                Text::make('Заголовок', 'json_title'),
+                                Image::make('Галерея', 'json_gallery')
+                                    ->dir('gallery')/** Директория где будут храниться файлы в storage (по умолчанию /)*/
+                                    ->allowedExtensions(['jpg', 'png', 'jpeg', 'gif', 'svg'])
+                                    ->multiple()
+                                    ->removable(),
+                                TinyMce::make('Описание', 'json_desc'),
+
+
+                            ])->vertical()->creatable(limit: 30)->removable(),
+
 
                         ]),
 
                     ])->columnSpan(12),
                 ]),
-
 
 
             ]),
@@ -249,7 +259,7 @@ class ProsthesisResource extends ModelResource
     protected function activeActions(): ListOf
     {
         return parent::activeActions()
-            ->except(Action::VIEW, /*Action::MASS_DELETE, Action::DELETE, Action::CREATE*/)// ->only(Action::VIEW)
+            ->except(Action::VIEW /*Action::MASS_DELETE, Action::DELETE, Action::CREATE*/)// ->only(Action::VIEW)
             ;
     }
 }
