@@ -28,7 +28,7 @@
 
 
     <section
-        class="elementor-section elementor-top-section elementor-element elementor-section-boxed elementor-section-height-default elementor-section-height-default pad_t40 pad_b40">
+        class="elementor-section elementor-top-section elementor-element elementor-section-boxed elementor-section-height-default elementor-section-height-default pad_t40_important pad_b40_important">
         <div class="elementor-container elementor-column-gap-default">
             <div class="elementor-column elementor-col-50 elementor-top-column elementor-element">
                 <div class="elementor-widget-wrap elementor-element-populated">
@@ -81,7 +81,7 @@
     </section>
 
     <section
-        class="background_F8F8F8 elementor-section elementor-top-section elementor-element elementor-section-boxed elementor-section-height-default elementor-section-height-default pad_t40 pad_b40">
+        class="background_F8F8F8 elementor-section elementor-top-section elementor-element elementor-section-boxed elementor-section-height-default elementor-section-height-default pad_t40 pad_b40 block">
         <div class="elementor-container elementor-column-gap-default">
 
             <div class="desc">
