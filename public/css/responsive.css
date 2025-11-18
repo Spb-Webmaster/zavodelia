@@ -225,6 +225,7 @@
         height: 36px
     }
 
+
     .elementor-element.elementor-section-full_width {
         padding-left: 0 !important;
         padding-right: 0 !important
@@ -460,6 +461,25 @@
 }
 
 @media (max-width: 767px) {
+    .mobile_menu_logo  a{
+        display: flex;
+        justify-content: center;
+        color: #282828;
+    }
+    .mobile_menu_logo span.logo_left {
+
+    }
+    .mobile_menu_logo span.logo_right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 0 0 6px;
+        line-height: 1.3rem;
+        font-size: 20px;
+        position: relative;
+        top: -2px;
+        font-family: TekoRus, sans-serif;
+    }
     .techite-header-top {
         padding-right: 0 !important;
         padding-left: 0 !important;

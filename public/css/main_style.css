@@ -814,7 +814,9 @@ figcaption.blocks-gallery-caption {
 }
 
 .techite-main-menu .logo a.main_sticky_main_l {
-    display: block
+    display: flex;
+    color: #282828;
+
 }
 
 .techite-main-menu .logo a.main_sticky_l {
@@ -834,8 +836,30 @@ figcaption.blocks-gallery-caption {
 }
 
 .techite-main-menu .prefix .logo a.main_sticky_l {
-    display: block
+    display: flex;
+    color: #FFFFFF;
 }
+
+
+.techite-main-menu .prefix .logo a{
+    justify-content: center;
+}
+.techite-main-menu span.logo_left {
+
+}
+.techite-main-menu span.logo_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2px 0 0 16px;
+    line-height: 1.5rem;
+    font-size: 22px;
+    position: relative;
+    top: -2px;
+    font-family: TekoRus, sans-serif;
+    font-weight: 500;
+}
+
 
 .mobile_menu_logo.text-center {
     padding: 20px 0

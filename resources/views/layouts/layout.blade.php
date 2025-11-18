@@ -84,7 +84,7 @@
                         <div class="col-xs-12 col-lg-8 col-xl-8 col-md-12 col-sm-12">
                             <div class="top-address text-left">
                                 <p>
-		                           <span><i class="icofont-home"></i>{{(config2('moonshine.setting.contact_address'))?:''}}</span>
+                                    <span><i class="icofont-home"></i>{{(config2('moonshine.setting.contact_address'))?:''}}</span>
                                     <a href="tel:{{(config2('moonshine.setting.phone1'))?:''}}">
                                         <i class="icofont-ui-call"></i>{{(config2('moonshine.setting.phone1'))?:''}}</a>
 
@@ -132,8 +132,16 @@
 
                                     <div class="mobile_menu_logo text-center">
                                         <a href="/">
-                                            <img src="{{ Storage::url('images/logo/Elia-logo2.svg') }}" width="113" alt="{{(config2('moonshine.setting.slogan2'))?:''}}" />
+                                            <span class="logo_left">
+                                            <img src="{{ Storage::url('images/logo/Elia-logo2.svg') }}" width="113"
+                                                 alt="{{(config2('moonshine.setting.slogan2'))?:''}}"/>
+                                            </span>
+                                            <span class="logo_right">
 
+                                               <span>Акционерное общество</span>
+                                                <span>«Завод Элия»</span>
+
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
@@ -159,16 +167,34 @@
 
                                             <div class="row logo-left">
                                                 <!-- LOGO -->
-                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                <div class="col-md-4 col-sm-3 col-xs-4">
 
 
                                                     <div class="logo">
-                                                        <a class="main_sticky_main_l" href="/" >
-                                                            <img src="{{ Storage::url('images/logo/Elia-logo2.svg') }}" width="113" />
+
+                                                        <a class="main_sticky_main_l" href="/">
+                                                            <span class="logo_left">
+                                                                <img
+                                                                    src="{{ Storage::url('images/logo/Elia-logo2.svg') }}"
+                                                                    width="113"/>
+                                                            </span>
+                                                            <span class="logo_right">
+                                                                    <span>Акционерное общество</span>
+                                                <span>«Завод Элия»</span>
+                                                            </span>
                                                         </a>
-                                                        <a class="main_sticky_l" href="/" >
-                                                            <img src="{{ Storage::url('images/logo/Elia-logo.svg') }}" width="113" />
+
+                                                        <a class="main_sticky_l" href="/">
+                                                            <span class="logo_left">
+                                                            <img src="{{ Storage::url('images/logo/Elia-logo.svg') }}"
+                                                                 width="113"/>
+                                                            </span>
+                                                            <span class="logo_right">
+                                                                    <span>Акционерное общество</span>
+                                                <span>«Завод Элия»</span>
+                                                            </span>
                                                         </a>
+
                                                     </div>
                                                 </div>
                                                 <!-- END LOGO -->
@@ -221,7 +247,9 @@
                                     <div class="footer-widget address">
                                         <div class="footer-logo">
 
-                                            <p>{{(config2('moonshine.setting.slogan2'))?:''}} - многоотраслевое, динамически развивающееся предприятие, имеющее партнерские отношения с многими крупными компаниями России и СНГ.</p>
+                                            <p>{{(config2('moonshine.setting.slogan2'))?:''}} - многоотраслевое,
+                                                динамически развивающееся предприятие, имеющее партнерские отношения с
+                                                многими крупными компаниями России и СНГ.</p>
                                         </div>
                                         <div class="footer-address">
                                             <div class="footer_s_inner">
@@ -269,20 +297,21 @@
                             <div id="nav_menu-2" class="widget widget_nav_menu"><h2 class="widget-title">Продукция</h2>
                                 <div class="menu-useful-links-container">
 
-                                        @if(isset($prosthetics))
+                                    @if(isset($prosthetics))
                                         <ul id="menu-useful-links" class="menu">
 
-                                        @foreach($prosthetics as $prosthesis)
+                                            @foreach($prosthetics as $prosthesis)
                                                 <li id="menu-item-6636"
                                                     class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                    <a href="{{ route('prosthesis', ['slug' => $prosthesis->slug]) }}">{{ $prosthesis->title }}</a></li>
+                                                    <a href="{{ route('prosthesis', ['slug' => $prosthesis->slug]) }}">{{ $prosthesis->title }}</a>
+                                                </li>
                                             @endforeach
                                         </ul>
-                                        @endif
+                                    @endif
 
 
 
-                                 {{--   <div class="pad_b15">Протезирование: </div>--}}
+                                    {{--   <div class="pad_b15">Протезирование: </div>--}}
 
                                 </div>
                             </div>
@@ -290,14 +319,14 @@
                         <div class="col-sm-12 col-md-6  col-lg-2">
                             <div id="nav_menu-3" class="widget widget_nav_menu"><h2 class="widget-title">Структура</h2>
                                 <div class="menu-service-request-container">
-                            @include('include.templates.menu.footer_menu')
+                                    @include('include.templates.menu.footer_menu')
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6  col-lg-4">
                             <div id="media_gallery-2" class="widget widget_media_gallery">
                                 <h2 class="widget-title">Предприятие
-                                    </h2>
+                                </h2>
                                 <div id="gallery-1"
                                      class="gallery galleryid-8 gallery-columns-3 gallery-size-thumbnail">
                                     @if(isset($photos))
@@ -336,7 +365,7 @@
                             <div class="copy-right-text">
                                 <!-- FOOTER COPYRIGHT TEXT -->
                                 <p>
-                                   {{ date("Y") }} © {{(config2('moonshine.setting.contact_copy'))?:''}}</p>
+                                    {{ date("Y") }} © {{(config2('moonshine.setting.contact_copy'))?:''}}</p>
 
                             </div>
                         </div>
@@ -468,7 +497,7 @@
         class="icofont-thin-up"></i></a>
 {{--@RegisterServiceWorkerScript --}}<!-- Service worker registration -->
 
-<x-order.order-call />
+<x-order.order-call/>
 </body>
 </html>
 
